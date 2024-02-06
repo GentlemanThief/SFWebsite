@@ -9,10 +9,10 @@ export default function Hero() {
             class="min-w-full min-h-full absolute object-cover"
             src="StrikeFirstHero.webm"
             type="video/webm"
-            autoplay
+            autoPlay
             muted
             loop
-            playsinline
+            playsInline
           ></video>
         </div>
       </div>
