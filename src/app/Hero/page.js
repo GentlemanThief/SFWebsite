@@ -7,8 +7,8 @@ export default function Hero() {
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
           <video
             class="min-w-full min-h-full absolute object-cover"
-            src="StrikeFirstHero.mp4"
-            type="video/mp4"
+            src="StrikeFirstHero.webm"
+            type="video/webm"
             autoPlay
             muted
             loop
