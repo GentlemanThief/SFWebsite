@@ -1,14 +1,14 @@
 import Image from "next/image";
 import TitleHeader from "../TitleHeader/page";
 
-import CobraTron from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/MemberImages/CobraTronA.jpg";
-import DRB from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/MemberImages/DRBA.jpg";
-import GentlemanThief from "public/MemberImages/GentlemanThiefA.jpg";
-import Cookye from "public/MemberImages/CookyeA.jpg";
-import Tek from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/MemberImages/TekA.jpg";
-import CobraKaiTone from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/MemberImages/CobraKaiToneA.jpg";
-import AdamYuki from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/MemberImages/AdamYukiA.jpg";
-import CrazyDrunk from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/MemberImages/CrazyDrunkA.jpg";
+import CobraTron from "strikefirstgaming/public/MemberImages/CobraTronA.jpg";
+import DRB from "strikefirstgaming/public/MemberImages/DRBA.jpg";
+import GentlemanThief from "strikefirstgaming/public/MemberImages/GentlemanThiefA.jpg";
+import Cookye from "strikefirstgaming/public/MemberImages/CookyeA.jpg";
+import Tek from "strikefirstgaming/public/MemberImages/TekA.jpg";
+import CobraKaiTone from "strikefirstgaming/public/MemberImages/CobraKaiToneA.jpg";
+import AdamYuki from "strikefirstgaming/public/MemberImages/AdamYukiA.jpg";
+import CrazyDrunk from "strikefirstgaming/public/MemberImages/CrazyDrunkA.jpg";
 
 export default function Members() {
   return (
