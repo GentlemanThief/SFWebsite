@@ -1,7 +1,7 @@
 import Image from "next/image";
-import News1 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/NewsImages/News3.png";
-import News2 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/NewsImages/News1.png";
-import News3 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/NewsImages/News2.png";
+import News1 from "public/NewsImages/News3.png";
+import News2 from "public/NewsImages/News1.png";
+import News3 from "public/NewsImages/News2.png";
 import TitleHeader from "../TitleHeader/page";
 
 export default function News() {

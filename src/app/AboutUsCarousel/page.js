@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import Carousel1 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/AboutUsImages/FaOpSSdVUAEV8eE_1512x.webp";
-import Carousel2 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/AboutUsImages/Carousel1.jpg";
-import Carousel3 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/AboutUsImages/Carousel3.jpg";
-import Carousel4 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/AboutUsImages/Carousel2.jpg";
+import Carousel1 from "public/AboutUsImages/FaOpSSdVUAEV8eE_1512x.webp";
+import Carousel2 from "public/AboutUsImages/Carousel1.jpg";
+import Carousel3 from "public/AboutUsImages/Carousel2.jpg";
+import Carousel4 from "public/AboutUsImages/Carousel3.jpg";
 
 export default function AboutUsCarousel() {
   return (

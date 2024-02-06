@@ -1,11 +1,11 @@
 import TitleHeader from "../TitleHeader/page";
 
 import Image from "next/image";
-import Tour1 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/TourImages/Tour1.png";
-import Tour2 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/TourImages/Tour2.png";
-import Tour3 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/TourImages/Tour3.png";
-import Tour4 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/TourImages/Tour4.png";
-import Tour5 from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/TourImages/Tour5.png";
+import Tour1 from "public/TourImages/Tour1.png";
+import Tour2 from "public/TourImages/Tour2.png";
+import Tour3 from "public/TourImages/Tour3.png";
+import Tour4 from "public/TourImages/Tour4.png";
+import Tour5 from "public/TourImages/Tour5.png";
 
 export default function StageSelect() {
   return (

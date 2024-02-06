@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import Monome from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/PartnerImages/MonoMe.jpg";
-import ForkingInPublic from "/Users/averycarey/Documents/Programming/strikefirstgaming/public/PartnerImages/ForkingInPublicA.jpg";
+import Monome from "public/PartnerImages/MonoMe.jpg";
+import ForkingInPublic from "public/PartnerImages/ForkingInPublicA.jpg";
 
 import TitleHeader from "../TitleHeader/page";
 
