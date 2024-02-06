@@ -1,14 +1,14 @@
 import Image from "next/image";
 import TitleHeader from "../TitleHeader/page";
 
-import CobraTron from "strikefirstgaming/public/MemberImages/CobraTronA.jpg";
-import DRB from "strikefirstgaming/public/MemberImages/DRBA.jpg";
-import GentlemanThief from "strikefirstgaming/public/MemberImages/GentlemanThiefA.jpg";
-import Cookye from "strikefirstgaming/public/MemberImages/CookyeA.jpg";
-import Tek from "strikefirstgaming/public/MemberImages/TekA.jpg";
-import CobraKaiTone from "strikefirstgaming/public/MemberImages/CobraKaiToneA.jpg";
-import AdamYuki from "strikefirstgaming/public/MemberImages/AdamYukiA.jpg";
-import CrazyDrunk from "strikefirstgaming/public/MemberImages/CrazyDrunkA.jpg";
+import CobraTron from "public/MemberImages/CobraTronA.jpg";
+import DRB from "public/MemberImages/DRBA.jpg";
+import GentlemanThief from "public/MemberImages/GentlemanThiefA.jpg";
+import Cookye from "public/MemberImages/CookyeA.jpg";
+import Tek from "public/MemberImages/TekA.jpg";
+import CobraKaiTone from "public/MemberImages/CobraKaiToneA.jpg";
+import AdamYuki from "public/MemberImages/AdamYukiA.jpg";
+import CrazyDrunk from "public/MemberImages/CrazyDrunkA.jpg";
 
 export default function Members() {
   return (
