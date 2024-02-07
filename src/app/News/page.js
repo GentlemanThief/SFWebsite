@@ -78,7 +78,7 @@ export default function News() {
             </a>
             <h2 class="text-md font-black text-center">
               <a
-                href="https://www.youtube.com/watch?v=J7-SwpBReEg&t"
+                href="https://www.youtube.com/watch?v=hAjRZM6yGMQ"
                 class="text-secondary underline"
               >
                 StrikeFirst On Button Check Pt. 2 FT. Cookye
