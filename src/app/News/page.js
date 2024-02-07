@@ -68,7 +68,7 @@ export default function News() {
             </p>
           </div>
           <div class="p-4 bg-base-100 border">
-            <a href="https://www.youtube.com/watch?v=J7-SwpBReEg&t">
+            <a href="https://www.youtube.com/watch?v=hAjRZM6yGMQ">
               <Image
                 src={News3}
                 class="object-cover w-full h-56 mb-1 bg-center border"
