@@ -7,13 +7,13 @@ export default function Hero() {
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
           <video
             class="min-w-full min-h-full absolute object-cover"
-            src="StrikeFirstHero.mp4"
-            type="video/mp4"
             autoPlay
             muted
             loop
-            playsInline
-          ></video>
+            playsInline>
+            <source src="StrikeFirstHero.webm" type="video/webm"></source>
+            <source src="StrikeFirstHero.mp4" type="video/mp4"></source>
+          </video>
         </div>
       </div>
       <div class="hero-content text-center text-white">
