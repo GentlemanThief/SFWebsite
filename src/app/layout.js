@@ -16,7 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="StrikeFirstDark">
-      <meta name="viewport" content="width=device-width, user-scalable=no"></meta>
+      <meta 
+        name="viewport" 
+        content="width=device-width, user-scalable=no"
+      ></meta>
       <body className={inter.className}>{children}</body>
     </html>
   );
