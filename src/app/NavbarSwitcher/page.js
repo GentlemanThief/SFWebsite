@@ -9,7 +9,7 @@ export default function NavbarSwitch() {
 
   const handleScroll = () => {
     const scrollY = window.scrollY;
-    const scrollThreshold = 675;
+    const scrollThreshold = window.innerHeight;
 
     if (scrollY > scrollThreshold) {
       setScrolled(true);
