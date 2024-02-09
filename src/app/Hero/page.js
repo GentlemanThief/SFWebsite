@@ -6,7 +6,7 @@ export default function Hero() {
       <div class="hero-overlay">
         <div class="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
           <video
-            class="min-w-full min-h-full absolute object-cover"
+            class="min-w-full min-h-full relative object-cover"
             autoPlay
             muted
             loop
