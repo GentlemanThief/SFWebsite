@@ -18,7 +18,7 @@ export default function Hero() {
       </div>
       <div class="hero-content text-center text-white">
         <div class="max-w-md">
-          <h1 class="text-7xl md:text-9xl font-black text-white flex justify-center">
+          <h1 class="xs:text-6xl sm:text-7xl md:text-9xl text-6xl font-black text-white flex justify-center">
             StrikeFirst
           </h1>
           <a class="text-white text-xs md:text-sm">
