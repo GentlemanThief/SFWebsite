@@ -20,7 +20,7 @@ export default function News() {
       </section>
       <section class="bg-base-200">
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 bg-base-200 p-4 mx-auto max-w-8xl">
-          <div class="p-4 bg-base-100 border">
+          <div class="p-1 bg-base-100 border">
             <a href="https://www.youtube.com/watch?v=zumPZvp1Hdk&t">
               <Image
                 src={News1}
@@ -44,7 +44,7 @@ export default function News() {
               out on the action – watch the video now!
             </p>
           </div>
-          <div class="p-4 bg-base-100 border">
+          <div class="p-1 bg-base-100 border">
             <a href="https://www.youtube.com/watch?v=J7-SwpBReEg&t">
               <Image
                 src={News2}
@@ -67,7 +67,7 @@ export default function News() {
               achieved, and the overall excitement of their time at EVO Japan.
             </p>
           </div>
-          <div class="p-4 bg-base-100 border">
+          <div class="p-1 bg-base-100 border">
             <a href="https://www.youtube.com/watch?v=hAjRZM6yGMQ">
               <Image
                 src={News3}
