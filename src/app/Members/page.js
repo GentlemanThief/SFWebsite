@@ -240,7 +240,7 @@ export default function Members() {
                   underlying philosophy about fighting games. While initially
                   making a name for himself in the Virtua Fighter series,
                   GentlemanThief has extended his skill and reach to all
-                  fighting games within his purview . With a profound
+                  fighting games within his purview. With a profound
                   understanding of the intricacies of fighting games shaping his
                   play style, GentlemanThief emerges as a formidable force in
                   any game he sets his sights on.
