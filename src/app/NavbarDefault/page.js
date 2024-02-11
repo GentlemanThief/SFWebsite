@@ -1,14 +1,10 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
 import ThemeSwitcher from "../ThemeSwitcher/page";
 
 export default function NavbarDefault() {
   return (
-    <div class="navbar bg-base-100 text-neutral-content w-full fixed top-0 z-50 backdrop-filter bg-opacity-0 pr-3">
+    <div class="navbar bg-base-100 text-neutral-content w-full fixed z-50 backdrop-filter bg-opacity-0 pr-4">
       <div class="navbar-start">
-        <div class="dropdown"></div>
-        <a class="btn btn-ghost btn-xl normal-case font-black text-4xl text-base-content">
+        <a class="btn btn-ghost btn-xl normal-case font-black sm:text-4xl text-3xl text-base-content">
           <div class="text-white">StrikeFirst</div>
         </a>
       </div>
@@ -105,3 +101,4 @@ export default function NavbarDefault() {
     </div>
   );
 }
+
