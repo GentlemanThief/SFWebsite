@@ -1,16 +1,9 @@
-"use client"
-
-import React, { useState, useEffect } from "react";
-
 export default function NavbarScrolled() {
   return (
-    <div
-      id="navgradient"
-      class="navbar bg-base-100 text-base-content w-full fixed z-50 border-b-2 border-base-content backdrop-filter bg-opacity-95"
-    >
+    <div class="navbar bg-base-100 text-base-content w-full fixed z-50 border-b-2 border-base-content backdrop-filter bg-opacity-95 pr-4">
       <div class="navbar-start">
-        <a class="normal-case font-black text-4xl text-base-content">
-          <p class="px-4">StrikeFirst</p>
+        <a class="btn btn-ghost btn-xl normal-case font-black sm:text-4xl text-3xl text-base-content">
+          <p class="text-base-content">StrikeFirst</p>
         </a>
       </div>
       <div class="navbar-center hidden lg:flex justify-center">
