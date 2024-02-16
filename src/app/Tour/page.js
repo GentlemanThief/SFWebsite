@@ -172,6 +172,7 @@ export default function StageSelect() {
                 class="object-cover w-full h-full"
                 alt="Tour5"
                 loading="lazy"
+                href="https://www.youtube.com/watch?v=Qw2F8GroJlA"
               ></Image>
             </div>
             <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
