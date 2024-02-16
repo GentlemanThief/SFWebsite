@@ -177,10 +177,10 @@ export default function StageSelect() {
             <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
               <a
                 rel="noopener noreferrer"
-                href="#"
+                href="https://www.youtube.com/watch?v=Qw2F8GroJlA"
                 class="py-2 text-sm font-black hover:underline text-white group-hover:underline"
               >
-                EVO Japan 2022
+                EVO Japan 2020
               </a>
               <div class="flex flex-col justify-start text-center text-white group-hover:underline">
                 <span class="text-sm font-black text-white">Tokyo,</span>
@@ -190,7 +190,7 @@ export default function StageSelect() {
             <h2 class="z-10 p-5">
               <a
                 rel="noopener noreferrer"
-                href="#"
+                href="https://www.youtube.com/watch?v=Qw2F8GroJlA"
                 class="btn btn-md font-medium text-md group-hover:underline bg-secondary text-white"
               >
                 Watch Now
