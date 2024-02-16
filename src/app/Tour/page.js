@@ -166,14 +166,15 @@ export default function StageSelect() {
           </div>
           <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500 border">
             <div class="absolute top-0 bottom-0 left-0 right-0 bg-base-100">
-              {" "}
-              <Image
-                src={Tour5}
-                class="object-cover w-full h-full"
-                alt="Tour5"
-                loading="lazy"
-                href="https://www.youtube.com/watch?v=Qw2F8GroJlA"
-              ></Image>
+              <a href="https://www.youtube.com/watch?v=Qw2F8GroJlA">
+                {" "}
+                <Image
+                  src={Tour5}
+                  class="object-cover w-full h-full"
+                  alt="Tour5"
+                  loading="lazy"
+                ></Image>
+              </a>
             </div>
             <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
               <a
