@@ -133,18 +133,20 @@ export default function StageSelect() {
           </div>
           <div class="relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500 border">
             <div class="absolute top-0 bottom-0 left-0 right-0 bg-base-100">
-              {" "}
-              <Image
-                src={Tour4}
-                class="object-cover w-full h-full"
-                alt="Tour4"
-                loading="lazy"
-              ></Image>
+              <a href="https://www.youtube.com/watch?v=On3fawmAHEc">
+                {" "}
+                <Image
+                  src={Tour4}
+                  class="object-cover w-full h-full"
+                  alt="Tour4"
+                  loading="lazy"
+                ></Image>
+              </a>
             </div>
             <div class="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
               <a
                 rel="noopener noreferrer"
-                href="#"
+                href="https://www.youtube.com/watch?v=On3fawmAHEc"
                 class="py-2 text-sm font-black hover:underline text-white group-hover:underline"
               >
                 DTN 2022
@@ -157,7 +159,7 @@ export default function StageSelect() {
             <h2 class="z-10 p-5">
               <a
                 rel="noopener noreferrer"
-                href="#"
+                href="https://www.youtube.com/watch?v=On3fawmAHEc"
                 class="btn font-medium text-md group-hover:underline bg-accent text-white"
               >
                 Watch Now
