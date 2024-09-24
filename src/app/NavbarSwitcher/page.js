@@ -7,24 +7,20 @@ import NavbarScrolled from "../NavbarScrolled/page";
 export default function NavbarSwitch() {
   const [scrolled, setScrolled] = useState(false);
 
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    const scrollThreshold = window.innerHeight;
-
-    if (scrollY > scrollThreshold) {
-      setScrolled(true);
-    } else {
-      setScrolled(false);
-    }
-  };
-
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollThreshold = window.innerHeight;
+      setScrolled(window.scrollY > scrollThreshold);
+    };
+
     window.addEventListener("scroll", handleScroll);
+    // Initial check
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  return <div>{scrolled ? <NavbarScrolled /> : <NavbarDefault />}</div>;
+  return scrolled ? <NavbarScrolled /> : <NavbarDefault />;
 }
