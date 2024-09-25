@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NavbarScrolled() {
+export default function NavbarScrolled({ changeTheme }) {
   return (
     <div class="navbar bg-base-100 text-base-content w-full fixed z-50 border-b-2 border-base-content backdrop-filter bg-opacity-95 pr-4">
       <div class="navbar-start">
@@ -103,10 +103,10 @@ export default function NavbarScrolled() {
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 border bg-base-100 w-52"
           >
             <li>
-              <button>Dark Theme</button>
+              <button onClick={() => changeTheme("theme-dark")}>Dark Theme</button>
             </li>
             <li>
-              <button>Light Theme</button>
+              <button onClick={() => changeTheme("theme-light")}>Light Theme</button>
             </li>
           </ul>
         </div>
