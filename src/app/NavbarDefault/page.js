@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function NavbarDefault() {
+export default function NavbarDefault({ changeTheme }) {
   return (
     <div class="navbar bg-base-100 text-neutral-content w-full fixed z-50 backdrop-filter bg-opacity-0 pr-4">
       <div class="navbar-start">
@@ -103,10 +103,10 @@ export default function NavbarDefault() {
             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 bg-opacity-0"
           >
             <li>
-              <button>Dark Theme</button>
+              <button onClick={() => changeTheme("theme-dark")}>Dark Theme</button>
             </li>
             <li>
-              <button>Light Theme</button>
+              <button onClick={() => changeTheme("theme-light")}>Light Theme</button>
             </li>
           </ul>
         </div>
@@ -138,4 +138,3 @@ export default function NavbarDefault() {
     </div>
   );
 }
-
