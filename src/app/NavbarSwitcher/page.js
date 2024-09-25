@@ -6,6 +6,12 @@ import NavbarScrolled from "../NavbarScrolled/page";
 
 export default function NavbarSwitch() {
   const [scrolled, setScrolled] = useState(false);
+  const [currentTheme, setCurrentTheme] = useState("theme-dark");
+
+  const themes = {
+    "theme-dark": "StrikeFirstDark",
+    "theme-light": "StrikeFirstLight",
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,5 +28,13 @@ export default function NavbarSwitch() {
     };
   }, []);
 
-  return scrolled ? <NavbarScrolled /> : <NavbarDefault />;
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", themes[currentTheme]);
+  }, [currentTheme]);
+
+  const changeTheme = (theme) => {
+    setCurrentTheme(theme);
+  };
+
+  return scrolled ? <NavbarScrolled changeTheme={changeTheme} /> : <NavbarDefault changeTheme={changeTheme} />;
 }
