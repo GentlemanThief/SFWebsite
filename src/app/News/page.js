@@ -6,9 +6,9 @@ import TitleHeader from "../TitleHeader/page";
 
 export default function News() {
   return (
-    <div id="news" class="bg-base-200 pt-20">
+    <div id="news" className="bg-base-200 pt-20">
       <TitleHeader title="News :" />
-      <section class="pt-5">
+      <section className="pt-5">
         <div class="w-full p-4 mx-auto text-center max-w-7xl bg-base-100">
           <h1 class="text-sm md:text-lg text-base-content max-w-7xl">
             &ldquo;Stay updated with the latest in esports and fighting game
@@ -18,8 +18,8 @@ export default function News() {
           </h1>
         </div>
       </section>
-      <section class="bg-base-200">
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 bg-base-200 p-4 mx-auto max-w-8xl">
+      <section className="bg-base-200">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 bg-base-200 p-4 mx-auto max-w-8xl">
           <div class="p-2 bg-base-100 border">
             <a href="https://www.youtube.com/watch?v=zumPZvp1Hdk&t">
               <Image
@@ -48,15 +48,15 @@ export default function News() {
             <a href="https://www.youtube.com/watch?v=J7-SwpBReEg&t">
               <Image
                 src={News2}
-                class="object-cover w-full h-56 mb-1 bg-center border"
-                alt="News1"
+                className="object-cover w-full h-56 mb-1 bg-center border"
+                alt="News2"
                 loading="lazy"
-              ></Image>
+              />
             </a>
-            <h2 class="text-md font-black text-base-300 underline text-center">
+            <h2 className="text-md font-black text-center">
               <a
                 href="https://www.youtube.com/watch?v=J7-SwpBReEg&t"
-                class="text-accent"
+                className="text-accent underline"
               >
                 Evo Japan 2023 interview FT. Dr.B
               </a>
@@ -71,10 +71,10 @@ export default function News() {
             <a href="https://www.youtube.com/watch?v=hAjRZM6yGMQ">
               <Image
                 src={News3}
-                class="object-cover w-full h-56 mb-1 bg-center border"
-                alt="News1"
+                className="object-cover w-full h-56 mb-1 bg-center border"
+                alt="News3"
                 loading="lazy"
-              ></Image>
+              />
             </a>
             <h2 class="text-md font-black text-center">
               <a
