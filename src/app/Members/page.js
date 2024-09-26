@@ -17,11 +17,11 @@ export default function Members() {
       <section className="pt-5">
         <div className="w-full p-4 mx-auto text-center max-w-7xl bg-base-100">
           <h1 className="text-sm md:text-lg text-base-content max-w-7xl">
-            "Meet the individuals who form the core of Team StrikeFirst in
-            our 'Members' section. Each member brings their unique
+            &ldquo;Meet the individuals who form the core of Team StrikeFirst in
+            our &lsquo;Members&lsquo; section. Each member brings their unique
             talents, passion, and gaming expertise to our diverse family.
             Discover the faces behind our success and get to know the driving
-            force of our competitive spirit."
+            force of our competitive spirit.&ldquo;
           </h1>
         </div>
       </section>
@@ -146,7 +146,7 @@ export default function Members() {
                   that goes beyond the mere act of playing. With a diverse
                   background that includes studies in China, Cookye seamlessly
                   integrates her passion for gaming into her work in the
-                  performing arts. As the CEO of 'Goddesses Media,'
+                  performing arts. As the CEO of &lsquo;Goddesses Media,&lsquo;
                   she leverages her expertise in choreography to create
                   captivating performances that blend dance, martial arts, and
                   acrobatics, inspired by iconic characters in both anime and
@@ -269,11 +269,11 @@ export default function Members() {
                   Tek, a steely-eyed veteran and widely recognized figure in the
                   fighting game community, possesses a network so expansive that
                   even a brief interaction might leave you wondering if
-                  there's anyone beyond his reach. With his extensive
+                  there&lsquo;s anyone beyond his reach. With his extensive
                   connections, undeniable skill, and profound understanding of
                   the fighting game landscape, Tek, as well as competing, serves
-                  as Team StrikeFirst's coach, steadfastly dedicated to
-                  elevating the team's skill level and is poised to propel
+                  as Team StrikeFirst&lsquo;s coach, steadfastly dedicated to
+                  elevating the team&lsquo;s skill level and is poised to propel
                   their capabilities to new heights and beyond.
                 </p>
               </div>
