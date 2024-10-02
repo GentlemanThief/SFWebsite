@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 
 export default function NavbarDefault({ changeTheme }) {
@@ -17,7 +15,8 @@ export default function NavbarDefault({ changeTheme }) {
               <li key={item} className="text-white">
                 <a
                   href={`#${item.toLowerCase().replace(" ", "-")}`}
-                  className="lg:text-sm underline hover:bg-base-100"
+                  className="lg:text-sm underline hover:bg-white hover:bg-opacity-20
+                  "
                 >
                   {item}
                 </a>
