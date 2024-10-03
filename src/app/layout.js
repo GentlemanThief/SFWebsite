@@ -37,11 +37,17 @@ export async function generateMetadata({ params, searchParams }, parent) {
       type: "website",
     },
     twitter: {
-      card: "summary_large_image",
+      card: siteImage,
       site: "@teamstrike1st",
       title: siteTitle,
       description: siteDescription,
       image: siteImage,
+    },
+    facebook: {
+      card: siteImage,
+      title: siteTitle,
+      description: siteDescription,
+      image: siteImage, 
     },
     icons: {
       icon: ["/favicon.ico"],
