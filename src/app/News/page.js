@@ -5,7 +5,6 @@ import News3 from "public/NewsImages/News2.png";
 import TitleHeader from "../TitleHeader/page";
 import FadeIn from "../FadeIn/page";
 
-
 export default function News() {
   return (
     <div id="news" className="bg-base-200 pt-20">
@@ -45,8 +44,8 @@ export default function News() {
               <p className="text-sm font-normal text-base-content">
                 Check out this video showcasing our team member Galaxy B as they
                 take on the exhilarating &ldquo;Beat A Boss Challenge&ldquo;
-                alongside the legendary Justin Wong at EVO 2023! Don&lsquo;t miss
-                out on the action – watch the video now!
+                alongside the legendary Justin Wong at EVO 2023! Don&lsquo;t
+                miss out on the action – watch the video now!
               </p>
             </FadeIn>
           </div>
@@ -95,8 +94,8 @@ export default function News() {
             <FadeIn>
               <p className="text-sm font-normal text-base-content">
                 Our very own Cookye Fu Sung has been featured on button check.
-                Delve into the narrative of Cookye&lsquo;s passion and prowess on
-                display at this prestigious event – press play now for an
+                Delve into the narrative of Cookye&lsquo;s passion and prowess
+                on display at this prestigious event – press play now for an
                 exclusive peek into her adventure!
               </p>
             </FadeIn>
@@ -104,14 +103,12 @@ export default function News() {
         </div>
       </section>
       <div className="flex justify-center">
-        <FadeIn>
-          <button
-            type="button"
-            className="px-6 py-4 text-sm rounded-sm hover:underline bg-base-100 text-base-content"
-          >
-            Load more posts...
-          </button>
-        </FadeIn>
+        <button
+          type="button"
+          className="px-6 py-4 text-sm rounded-sm hover:underline bg-base-100 text-base-content"
+        >
+          Load more posts...
+        </button>
       </div>
     </div>
   );
