@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import React from "react";
 
@@ -20,7 +20,7 @@ export default function NavbarScrolled({ changeTheme }) {
               <li key={item} className="text-base-content">
                 <a
                   href={`#${item.toLowerCase().replace(" ", "-")}`}
-                  className="lg:text-sm underline hover:bg-base-100"
+                  className="lg:text-sm underline hover:bg-base-200"
                 >
                   {item}
                 </a>
@@ -30,7 +30,7 @@ export default function NavbarScrolled({ changeTheme }) {
         </ul>
       </div>
       <div className="navbar-end">
-        <div class="dropdown border hover:border-primary">
+        <div class="dropdown border hover:border-primary hover:bg-base-100">
           <label tabindex="0" class="btn btn-ghost hover:bg-base-100">
             <a>
               <svg
