@@ -4,10 +4,15 @@ import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
-const siteTitle = process.env.NEXT_PUBLIC_SITE_TITLE || "Team StrikeFirst - Professional eSports Fighting Game Team";
-const siteDescription = process.env.NEXT_PUBLIC_SITE_DESCRIPTION || "Team StrikeFirst is a dedicated eSports team specializing in fighting games. From local showdowns to global tournaments, we travel the world, ready to conquer the virtual arena. Join us in our quest for victory!";
+const siteTitle =
+  process.env.NEXT_PUBLIC_SITE_TITLE ||
+  "Team StrikeFirst - Professional eSports Fighting Game Team";
+const siteDescription =
+  process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
+  "Team StrikeFirst is a dedicated eSports team specializing in fighting games. From local showdowns to global tournaments, we travel the world, ready to conquer the virtual arena. Join us in our quest for victory!";
 const siteImage = process.env.NEXT_PUBLIC_SITE_IMAGE || "/og-image.jpg";
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.teamstrikefirst.com";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://www.teamstrikefirst.com";
 
 export async function generateMetadata({ params, searchParams }, parent) {
   return {
@@ -22,7 +27,8 @@ export async function generateMetadata({ params, searchParams }, parent) {
     ],
     openGraph: {
       title: siteTitle,
-      description: "Join Team StrikeFirst in our quest for eSports glory in fighting games!",
+      description:
+        "Join Team StrikeFirst in our quest for eSports glory in fighting games!",
       url: siteUrl,
       siteName: "Team StrikeFirst",
       images: [
@@ -47,12 +53,15 @@ export async function generateMetadata({ params, searchParams }, parent) {
       card: siteImage,
       title: siteTitle,
       description: siteDescription,
-      image: siteImage, 
+      image: siteImage,
     },
     icons: {
       icon: ["/favicon.ico"],
       apple: ["/apple-touch-icon.png"],
       shortcut: ["/apple-touch-icon.png"],
+    },
+    alternates: {
+      canonical: siteUrl,
     },
     manifest: "site.webmanifest",
     viewport: "width=device-width, initial-scale=1, user-scalable=no",
