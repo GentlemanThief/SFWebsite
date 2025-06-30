@@ -26,10 +26,10 @@ export default function AboutUs() {
                 us as we continue to challenge the boundaries of esports and the
                 fighting game community.&rdquo;
               </h2>
-              <div>
+              <div className="text-center">
                 <h3
                   className="text-4xl sm:text-6xl md:text-2xl lg:text-4xl xl:text-5xl 
-                font-black text-center text-transparent bg-clip-text 
+                font-black inline-block text-transparent bg-clip-text 
                 bg-gradient-to-r from-primary via-accent to-secondary p-1"
                 >
                   #StrikeFirstGaming
