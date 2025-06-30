@@ -1,6 +1,9 @@
-import TitleHeader from "../TitleHeader/page";
+"use client";
+
+import TitleHeader from "../../components/TitleHeader";
 import AboutUsCarousel from "../AboutUsCarousel/page";
-import FadeIn from "../FadeIn/page";
+import FadeIn from "../../components/FadeIn";
+
 
 
 export default function AboutUs() {
@@ -9,7 +12,7 @@ export default function AboutUs() {
       <TitleHeader title="About Us :" />
       <article className="pt-3">
         <div className="grid items-center grid-cols-1 md:grid-cols-2 bg-base-100 border-y">
-          <div className="order-2 md:order-1 md:h-full">
+                    <div className="order-2 md:order-1">
             <AboutUsCarousel className="order-1" />
           </div>
           <div className="order-1 w-full mx-auto md:w-3/4 md:px-0 p-3 order-2">
@@ -113,6 +116,8 @@ export default function AboutUs() {
             </FadeIn>
           </div>
         </div>
+
+
       </article>
     </section>
   );

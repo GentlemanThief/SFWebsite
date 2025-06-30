@@ -1,17 +1,28 @@
 import Image from "next/image";
-import TitleHeader from "../TitleHeader/page";
+import TitleHeader from "../../components/TitleHeader";
 
-import CobraTron from "public/MemberImages/CobraTronA.jpg";
-import DRB from "public/MemberImages/DRBA.jpg";
-import GentlemanThief from "public/MemberImages/GentlemanThiefA.jpg";
-import Cookye from "public/MemberImages/CookyeA.jpg";
-import Tek from "public/MemberImages/TekA.jpg";
-import CobraKaiTone from "public/MemberImages/CobraKaiToneA.jpg";
-import AdamYuki from "public/MemberImages/AdamYukiA.jpg";
-import CrazyDrunk from "public/MemberImages/CrazyDrunkA.jpg";
+// Import images with proper Next.js path format
+import CobraTronImg from "/public/MemberImages/CobraTronA.jpg";
+import DRBImg from "/public/MemberImages/DRBA.jpg";
+import GentlemanThiefImg from "/public/MemberImages/GentlemanThiefA.jpg";
+import CookyeImg from "/public/MemberImages/CookyeA.jpg";
+import TekImg from "/public/MemberImages/TekA.jpg";
+import CobraKaiToneImg from "/public/MemberImages/CobraKaiToneA.jpg";
+import AdamYukiImg from "/public/MemberImages/AdamYukiA.jpg";
+import CrazyDrunkImg from "/public/MemberImages/CrazyDrunkA.jpg";
+
+// Assign the imported images to variables with the original names
+const CobraTron = CobraTronImg;
+const DRB = DRBImg;
+const GentlemanThief = GentlemanThiefImg;
+const Cookye = CookyeImg;
+const Tek = TekImg;
+const CobraKaiTone = CobraKaiToneImg;
+const AdamYuki = AdamYukiImg;
+const CrazyDrunk = CrazyDrunkImg;
 
 import dynamic from "next/dynamic";
-const FadeIn = dynamic(() => import("../FadeIn/page"), { ssr: false });
+const FadeIn = dynamic(() => import("../../components/FadeIn"), { ssr: false });
 
 export default function Members() {
   return (

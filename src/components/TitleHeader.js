@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-const FadeIn = dynamic(() => import("../FadeIn/page"), { ssr: false });
+const FadeIn = dynamic(() => import("./FadeIn"), { ssr: false });
 
 export default function TitleHeader({ title }) {
   return (

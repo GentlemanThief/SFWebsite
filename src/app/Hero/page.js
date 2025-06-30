@@ -1,21 +1,46 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 
 export default function Hero() {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="hero min-h-screen">
       <div className="hero-overlay">
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
-          <video
+                <div className="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
+          {isMobile ? (
+            <img
+              src="/og-image.jpg"
+              alt="Team StrikeFirst"
+              className="min-w-full min-h-full absolute object-cover"
+            />
+          ) : (
+                    <video
             className="min-w-full min-h-full absolute object-cover"
             autoPlay
             muted
             loop
             playsInline
             aria-label="Background video"
+            poster="/og-image.jpg"
           >
             <source src="StrikeFirstHero.webm" type="video/webm" />
             <source src="StrikeFirstHero.mp4" type="video/mp4" />
           </video>
+          )}
         </div>
       </div>
       <div className="hero-content text-center text-white">
