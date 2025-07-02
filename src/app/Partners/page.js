@@ -10,7 +10,7 @@ export default function Sponsors() {
     <div id="partners" className="bg-base-200 pt-20">
       <TitleHeader title="Partners :" />
       <section className="pt-5">
-        <div className="w-full p-4 mx-auto text-center max-w-7xl bg-base-100">
+        <div className="w-full mx-auto text-center max-w-7xl bg-base-100">
           <FadeIn>
             <h1 className="text-sm md:text-lg text-base-content max-w-7xl">
               &ldquo;Explore the incredible products and services offered by our
