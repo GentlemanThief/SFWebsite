@@ -3,6 +3,7 @@
 import TitleHeader from "../../components/TitleHeader";
 import AboutUsCarousel from "../AboutUsCarousel/page";
 import FadeIn from "../../components/FadeIn";
+import SectionDescription from "../../components/SectionDescription";
 
 
 
@@ -18,14 +19,14 @@ export default function AboutUs() {
           <div className="order-1 w-full mx-auto md:w-3/4 md:px-0 p-3 order-2">
             <h1 className="text-6xl flex justify-center font-black text-base-content"></h1>
             <FadeIn>
-              <h2 className="text-sm sm:text-lg md:text-xs lg:text-sm xl:text-xl text-base-content">
-                &ldquo;Cultivating champions and fostering camaraderie, Team
+              <SectionDescription>
+                Cultivating champions and fostering camaraderie, Team
                 StrikeFirst is a dedicated esports squad specializing in
                 competitive fighting games. We are a global family of gamers who
                 live, breathe, and thrive in the world of virtual combat. Join
                 us as we continue to challenge the boundaries of esports and the
-                fighting game community.&rdquo;
-              </h2>
+                fighting game community.
+              </SectionDescription>
               <div className="text-center">
                 <h3
                   className="text-4xl sm:text-6xl md:text-2xl lg:text-4xl xl:text-5xl 

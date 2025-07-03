@@ -1,26 +1,17 @@
 "use client";
 
-import TitleHeader from "../../components/TitleHeader";
 import FadeIn from "../../components/FadeIn";
 import { newsData } from "./newsData";
 import NewsCard from "../NewsCard/page";
+import TitleWithDescription from "../../components/TitleWithDescription";
 
 export default function News() {
   return (
     <div id="news" className="bg-base-200 pt-20">
-      <TitleHeader title="News :" />
-      <section className="pt-5">
-        <div className="w-full p-4 mx-auto text-center max-w-7xl bg-base-100">
-          <FadeIn>
-            <h1 className="text-sm md:text-lg text-base-content max-w-7xl">
-              &ldquo;Stay updated with the latest in esports and fighting game
-              tournaments through Team StrikeFirst&lsquo;s &lsquo;News&lsquo;
-              section. Explore game highlights, tournament results, and
-              exclusive insights into our journey, all in one place.&ldquo;
-            </h1>
-          </FadeIn>
-        </div>
-      </section>
+      <TitleWithDescription 
+        title="News" 
+        description="Stay updated with the latest in esports and fighting game tournaments through Team StrikeFirst's 'News' section. Explore game highlights, tournament results, and exclusive insights into our journey, all in one place."
+      />
       <section className="bg-base-200">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 bg-base-200 p-4 mx-auto max-w-8xl">
           {newsData.map((article, index) => (
