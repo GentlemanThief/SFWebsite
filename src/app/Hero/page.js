@@ -18,7 +18,7 @@ export default function Hero() {
     };
   }, []);
   return (
-    <div className="hero min-h-screen">
+    <div id="hero" className="hero min-h-screen">
       <div className="hero-overlay">
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
           {isMobile ? (
