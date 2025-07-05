@@ -6,10 +6,10 @@ export default function NewsCard({ article }) {
 
   return (
     <div className="bg-base-100">
-      <a href={href} className="relative block w-full h-56 mb-3">
+      <a href={href} className="relative block w-full h-56 mb-3 group overflow-hidden border border-white">
         <Image
           src={image}
-          className="object-cover bg-center border"
+          className="object-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-105"
           alt={alt}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

@@ -28,13 +28,13 @@ export default function PartnerCard({ partner }) {
         </a>
       </div>
       <div className="relative w-full h-full md:h-[450px] flex items-center justify-center">
-        <a href={href} aria-label={`Visit ${name} website`} className="w-full h-full relative">
+        <a href={href} aria-label={`Visit ${name} website`} className="w-full h-full relative group overflow-hidden border border-white">
           <Image 
             src={image} 
             fill 
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" 
             loading="lazy" 
-            className="object-cover border" 
+            className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105" 
             alt={alt} 
           />
         </a>

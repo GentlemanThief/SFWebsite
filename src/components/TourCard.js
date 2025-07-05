@@ -10,15 +10,17 @@ const TourCard = ({ tour }) => {
       className={`relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500 border ${
         isLarge ? 'md:col-span-2 lg:row-span-2 lg:h-full' : ''
       }`}>
-      <div className="absolute top-0 bottom-0 left-0 right-0 bg-base-100">
+      <div className="absolute top-0 bottom-0 left-0 right-0 bg-base-100 overflow-hidden rounded-xl">
         <a href={videoUrl} target="_blank" rel="noopener noreferrer">
           <Image
             src={imageUrl}
             fill
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
             alt={eventName}
             loading="lazy"
           />
+          {/* Color fade overlay */}
+          <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-br from-primary/20 via-accent/20 to-secondary/20 rounded-xl"></div>
         </a>
       </div>
       <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
@@ -43,7 +45,13 @@ const TourCard = ({ tour }) => {
           rel="noopener noreferrer"
           href={videoUrl}
           target="_blank"
-          className={`btn font-medium text-md group-hover:underline ${buttonColor || 'bg-primary'} text-white`}>
+          className={`btn font-medium text-md group-hover:underline ${buttonColor || 'bg-primary'} text-white ${
+  buttonColor === 'bg-primary' ? 'hover:bg-primary-focus' :
+  buttonColor === 'bg-accent' ? 'hover:bg-accent-focus' :
+  buttonColor === 'bg-secondary' ? 'hover:bg-secondary-focus' :
+  'hover:bg-primary-focus'
+}`}
+>
           Watch Now
         </a>
       </h2>
