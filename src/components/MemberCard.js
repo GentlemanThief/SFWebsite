@@ -8,8 +8,8 @@ export default function MemberCard({ member }) {
   const nameGradient = gradient || "text-transparent bg-clip-text bg-gradient-to-r from-secondary-content via-secondary to-secondary-focus";
 
   return (
-    <div className="member-card-hover" style={{ boxShadow: 'none' }}>
-      <div className="relative overflow-hidden">
+    <div className="member-card-hover" style={{ boxShadow: 'none', borderRadius: 0 }}>
+      <div className="relative overflow-hidden" style={{ borderRadius: 0 }}>
         <Image
           src={image}
           className="object-cover w-full h-50 border"
@@ -17,6 +17,7 @@ export default function MemberCard({ member }) {
           loading="lazy"
           width={400}
           height={300}
+          style={{ borderRadius: 0 }}
         />
       </div>
       <div className="p-4">
@@ -33,7 +34,7 @@ export default function MemberCard({ member }) {
           </h3>
         )}
         <FadeIn>
-          <p className="text-sm text-center font-normal text-base-content py-2">
+          <p className="text-sm text-left font-normal text-base-content py-2">
             {description}
           </p>
         </FadeIn>

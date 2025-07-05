@@ -6,7 +6,7 @@ const FadeIn = dynamic(() => import("../../components/FadeIn"), { ssr: false });
 
 export default function Members() {
   return (
-    <div id="members" className="bg-base-200 pt-20">
+    <div id="members" className="bg-base-200">
       <TitleWithDescription 
         title="Members :" 
         description="Meet the individuals who form the core of Team StrikeFirst in our 'Members' section. Each member brings their unique talents, passion, and gaming expertise to our diverse family. Discover the faces behind our success and get to know the driving force of our competitive spirit."
