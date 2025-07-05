@@ -9,3 +9,27 @@ html {
 body {
     overflow-x: hidden;
 }
+
+/* Member card hover effects */
+.member-card {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.member-card:hover {
+  transform: translateY(-12px);
+  border-color: hsl(var(--p));
+}
+
+/* Tailwind component classes for member cards */
+@layer components {
+  .member-card-hover {
+    @apply relative transition-all duration-300 ease-out border border-transparent rounded-lg overflow-hidden bg-base-100;
+  }
+  
+  .member-card-hover:hover {
+    @apply transform -translate-y-3;
+  }
+}

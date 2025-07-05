@@ -90,16 +90,7 @@ export default function NavbarSwitch() {
           }`}
         >
           <span className="relative">
-            {scrolled ? (
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-blue-500 via-cyan-400 via-green-400 to-yellow-400">
-                StrikeFirst
-              </span>
-            ) : (
-              <>
-                StrikeFirst
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-accent/20 blur-lg animate-pulse"></div>
-              </>
-            )}
+            <span className="text-white">StrikeFirst</span>
           </span>
         </a>
       </div>
