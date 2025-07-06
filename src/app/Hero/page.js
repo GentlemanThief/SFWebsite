@@ -35,7 +35,7 @@ export default function Hero() {
             loop
             playsInline
             aria-label="Background video"
-            poster="/StrikeFirstHero-poster.jpg"
+            poster="/Strikefirsthero-poster.png"
           >
             <source src="StrikeFirstHero.webm" type="video/webm" />
             <source src="StrikeFirstHero.mp4" type="video/mp4" />
