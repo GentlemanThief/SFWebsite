@@ -1,6 +1,47 @@
 @tailwind base;
+
+@layer utilities {
+  @keyframes subtle-bounce {
+    0%, 100% {
+      transform: translateY(-5%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  .animate-subtle-bounce {
+    animation: subtle-bounce 1s infinite;
+  }
+}
 @tailwind components;
 @tailwind utilities;
+
+@keyframes gradient-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.gradient-text-animate {
+  background-size: 200% 200%;
+  animation: gradient-shimmer 3s linear infinite;
+}
+
+.underline-fade-slide {
+  opacity: 0;
+  transform: translateY(0.75rem);
+  transition: opacity 0.5s, transform 0.5s;
+}
+.underline-fade-slide-active {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 html {
     scroll-behavior: smooth;

@@ -13,7 +13,7 @@ export default function Sponsors() {
         description="Explore the incredible products and services offered by our valued sponsors in the 'Product Sponsors' section. These partners provide exceptional support, helping us achieve new heights in the world of esports and competitive gaming."
       />
       <div className="px-3 pb-10 pt-6 mx-auto max-w-8xl bg-base-200">
-        <div className="grid grid-cols-1 gap-10">
+        <div className="grid grid-cols-1 gap-5">
           {partnersData.map((partner, index) => (
             <PartnerCard key={index} partner={partner} />
           ))}

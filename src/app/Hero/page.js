@@ -64,6 +64,7 @@ export default function Hero() {
                 stroke="currentColor"
                 height="58"
                 width="58"
+                className="hover:animate-subtle-bounce"
               >
                 <path
                   strokeLinecap="round"

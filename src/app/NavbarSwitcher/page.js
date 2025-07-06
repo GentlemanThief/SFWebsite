@@ -96,15 +96,35 @@ export default function NavbarSwitch() {
           }`}
         >
           <span className="relative">
-            <span className="text-white">StrikeFirst</span>
+            <span className="relative inline-block">
+                <span className={`text-3xl sm:text-4xl font-black tracking-tight ${scrolled ? 'text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary' : 'text-white'} inline-block`}>
+                  StrikeFirst
+                </span>
+                <span className="absolute left-1/2 -bottom-1.5 w-3/4 h-0.5 -translate-x-1/2 bg-white rounded-full" />
+              </span>
           </span>
         </a>
       </div>
 
       <div className="navbar-center hidden lg:flex justify-center relative z-10">
         <ul className="menu menu-horizontal font-bold space-x-2">
-          {navItems.map((item) => {
+          {navItems.map((item, idx) => {
             const isActive = activeSection === item.href.substring(1);
+            // Hover color mapping per user request
+            const hoverColor = (() => {
+              switch (item.name) {
+                case "Home":
+                case "News":
+                case "Tour":
+                  return "primary";
+                case "About Us":
+                case "Partners":
+                case "Members":
+                  return "secondary";
+                default:
+                  return "primary";
+              }
+            })();
             return (
               <li key={item.name} className="relative">
                 <button
@@ -113,8 +133,8 @@ export default function NavbarSwitch() {
   ${
     scrolled
       ? isActive
-        ? "bg-primary/10 text-primary shadow-sm"
-        : "hover:bg-primary/10 hover:text-primary hover:bg-secondary/10 hover:text-secondary"
+        ? `bg-${hoverColor}/10 text-${hoverColor} shadow-sm`
+        : `hover:bg-${hoverColor}/10 hover:text-${hoverColor}`
       : isActive
         ? "bg-white/10 text-white shadow-sm backdrop-blur-sm"
         : "hover:bg-white/10 hover:text-white text-white/90 hover:bg-secondary/10 hover:text-secondary"
