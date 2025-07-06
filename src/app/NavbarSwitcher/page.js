@@ -14,12 +14,12 @@ export default function NavbarSwitch() {
   };
 
   const navItems = [
-  { name: "Home", href: "#hero", icon: "🏡" },           // House with garden, more color
-  { name: "About Us", href: "#about-us", icon: "🧑‍🤝‍🧑" }, // Two people holding hands, clear and inclusive
-  { name: "News", href: "#news", icon: "📅" },         // Calendar
-  { name: "Partners", href: "#partners", icon: "🤝🏻" },   // Handshake, light skin tone
-  { name: "Tour", href: "#tour", icon: "✈️" },           // Airplane
-  { name: "Members", href: "#members", icon: "⭐" },     // Star, classic
+  { name: "Home", href: "#hero", icon: "🏡" },
+  { name: "About Us", href: "#about-us", icon: "🧑‍🤝‍🧑" },
+  { name: "News", href: "#news", icon: "📅" },
+  { name: "Partners", href: "#partners", icon: "🤝🏻" },
+  { name: "Tour", href: "#tour", icon: "✈️" },
+  { name: "Members", href: "#members", icon: "⭐" },
 ];
 
   useEffect(() => {
