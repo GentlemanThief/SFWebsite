@@ -1,15 +1,16 @@
 import Image from "next/image";
 
 const TourCard = ({ tour }) => {
-    const { eventName, location, imageUrl, videoUrl, layout, buttonColor } = tour;
+  const { eventName, location, imageUrl, videoUrl, layout, buttonColor } = tour;
 
-  const isLarge = layout === 'large';
+  const isLarge = layout === "large";
 
   return (
     <div
       className={`relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500 border ${
-        isLarge ? 'md:col-span-2 lg:row-span-2 lg:h-full' : ''
-      }`}>
+        isLarge ? "md:col-span-2 lg:row-span-2 lg:h-full" : ""
+      }`}
+    >
       <div className="absolute top-0 bottom-0 left-0 right-0 bg-base-100 overflow-hidden rounded-xl">
         <a href={videoUrl} target="_blank" rel="noopener noreferrer">
           <Image
@@ -19,8 +20,6 @@ const TourCard = ({ tour }) => {
             alt={eventName}
             loading="lazy"
           />
-          {/* Color fade overlay */}
-          <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity duration-500 bg-gradient-to-br from-primary/20 via-accent/20 to-secondary/20 rounded-xl"></div>
         </a>
       </div>
       <div className="absolute top-0 left-0 right-0 flex items-center justify-between mx-5 mt-3">
@@ -28,15 +27,16 @@ const TourCard = ({ tour }) => {
           rel="noopener noreferrer"
           href={videoUrl}
           target="_blank"
-          className={`py-2 font-black text-white group-hover:underline ${isLarge ? 'text-5xl' : 'text-sm'}`}>
+          className={`py-2 font-black text-white group-hover:underline ${isLarge ? "text-5xl" : "text-sm"}`}
+        >
           {eventName}
         </a>
         <div className="flex flex-col justify-start text-center text-white group-hover:underline">
-          <span className={`font-black ${isLarge ? 'text-4xl' : 'text-sm'}`}>
-            {location.split(',')[0]},
+          <span className={`font-black ${isLarge ? "text-4xl" : "text-sm"}`}>
+            {location.split(",")[0]},
           </span>
-          <span className={`text-white ${isLarge ? 'text-xl' : 'text-sm'}`}>
-            {location.split(',')[1]}
+          <span className={`text-white ${isLarge ? "text-xl" : "text-sm"}`}>
+            {location.split(",")[1]}
           </span>
         </div>
       </div>
@@ -45,13 +45,16 @@ const TourCard = ({ tour }) => {
           rel="noopener noreferrer"
           href={videoUrl}
           target="_blank"
-          className={`btn font-medium text-md group-hover:underline ${buttonColor || 'bg-primary'} text-white ${
-  buttonColor === 'bg-primary' ? 'hover:bg-primary-focus' :
-  buttonColor === 'bg-accent' ? 'hover:bg-accent-focus' :
-  buttonColor === 'bg-secondary' ? 'hover:bg-secondary-focus' :
-  'hover:bg-primary-focus'
-}`}
->
+          className={`btn font-medium text-md group-hover:underline ${buttonColor || "bg-primary"} text-white ${
+            buttonColor === "bg-primary"
+              ? "hover:bg-primary-focus"
+              : buttonColor === "bg-accent"
+                ? "hover:bg-accent-focus"
+                : buttonColor === "bg-secondary"
+                  ? "hover:bg-secondary-focus"
+                  : "hover:bg-primary-focus"
+          }`}
+        >
           Watch Now
         </a>
       </h2>
