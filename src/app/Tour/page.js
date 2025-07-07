@@ -4,10 +4,12 @@ import FadeIn from "../../components/FadeIn";
 import tourData from "./tourData";
 import TourCard from "../../components/TourCard";
 import TitleWithDescription from "../../components/TitleWithDescription";
+import AngledSpacer from "../../components/AngledSpacer";
 
 export default function Tour() {
   return (
-    <div id="tour" className="bg-base-200 pt-20">
+    <div id="tour" className="bg-base-200">
+      <AngledSpacer />
       <TitleWithDescription 
         title="Tour" 
         description="Embark on a journey with Team StrikeFirst in our 'Tour' section as we travel the globe to compete in thrilling fighting game tournaments. Follow our adventures, relive the electrifying moments, and witness the dedication and skill that make us true contenders in the esports arena."

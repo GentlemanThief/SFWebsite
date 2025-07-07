@@ -60,11 +60,17 @@ export default function NavbarSwitch() {
   };
 
   const smoothScroll = (href) => {
-    // If already on homepage, scroll. Otherwise, navigate then scroll.
     if (window.location.pathname === "/") {
       const element = document.querySelector(href);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        const scrollOffset = 100; // Consistent with activeSection logic
+        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - scrollOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
       }
     } else {
       window.location.href = `/${href}`;

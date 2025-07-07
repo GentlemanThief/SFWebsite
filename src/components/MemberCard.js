@@ -12,7 +12,7 @@ export default function MemberCard({ member }) {
       <div className="relative overflow-hidden" style={{ borderRadius: 0 }}>
         <Image
           src={image}
-          className="object-cover w-full h-50 border"
+          className="object-cover w-full h-50"
           alt={name}
           loading="lazy"
           width={400}

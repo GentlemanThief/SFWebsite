@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="flex justify-center bg-base-100 border-t-2">
+    <footer className="flex justify-center bg-base-100-t-2">
       <div className="footer-center bg-base-100 text-base-content py-1">
         <aside>
           <a href="#top" className="flex justify-center pt-1" aria-label="Scroll to top">

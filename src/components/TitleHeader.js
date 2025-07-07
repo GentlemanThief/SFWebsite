@@ -3,9 +3,9 @@ const FadeIn = dynamic(() => import("./FadeIn"), { ssr: false });
 
 export default function TitleHeader({ title }) {
   return (
-    <div className="relative py-8 px-6" style={{backgroundColor: '#1a1a1a'}}>
+    <div className="relative py-5 px-6" style={{backgroundColor: '#1a1a1a'}}>
       {/* Subtle background accent elements */}
-      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/3 to-transparent border-white border-y"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/3 to-transparent"></div>
       
       {/* Main title container */}
       <div className="relative flex justify-center items-center">

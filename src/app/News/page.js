@@ -4,10 +4,12 @@ import FadeIn from "../../components/FadeIn";
 import { newsData } from "./newsData";
 import NewsCard from "../NewsCard/page";
 import TitleWithDescription from "../../components/TitleWithDescription";
+import AngledSpacer from "../../components/AngledSpacer";
 
 export default function News() {
   return (
-    <div id="news" className="bg-base-200 pt-20">
+    <div id="news" className="bg-base-200 pt-6">
+      <AngledSpacer />
       <TitleWithDescription 
         title="News" 
         description="Stay updated with the latest in esports and fighting game tournaments through Team StrikeFirst's 'News' section. Explore game highlights, tournament results, and exclusive insights into our journey, all in one place."

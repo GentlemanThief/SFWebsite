@@ -4,7 +4,7 @@ export default function AboutUsCarousel() {
   return (
     <div>
       <div className="carousel w-full h-[750px]">
-        <div id="slide1" className="carousel-item relative w-full border">
+        <div id="slide1" className="carousel-item relative w-full">
           <Image
             src="/AboutUsImages/FaOpSSdVUAEV8eE_1512x.webp"
             fill
@@ -26,7 +26,7 @@ export default function AboutUsCarousel() {
             </a>
           </div>
         </div>
-        <div id="slide2" className="carousel-item relative w-full border">
+        <div id="slide2" className="carousel-item relative w-full">
           <Image
             src="/AboutUsImages/Carousel1.jpg"
             fill
@@ -48,7 +48,7 @@ export default function AboutUsCarousel() {
             </a>
           </div>
         </div>
-        <div id="slide3" className="carousel-item relative w-full border">
+        <div id="slide3" className="carousel-item relative w-full">
           <Image
             src="/AboutUsImages/Carousel2.jpg"
             fill
@@ -72,7 +72,7 @@ export default function AboutUsCarousel() {
         </div>
         <div
           id="slide4"
-          className="carousel-item relative w-full brightness-90 border"
+          className="carousel-item relative w-full brightness-90"
         >
           <Image
             src="/AboutUsImages/Carousel3.jpg"

@@ -3,7 +3,7 @@ const FadeIn = dynamic(() => import("./FadeIn"), { ssr: false });
 
 export default function TitleWithDescription({ title, description }) {
   return (
-    <div className="relative py-5 px-6 border-t-2 border-b-2 border-white" style={{backgroundColor: '#1a1a1a'}}>
+    <div className="relative py-5 px-6" style={{backgroundColor: '#1a1a1a'}}>
       {/* Subtle background accent elements */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/3 to-transparent"></div>
       

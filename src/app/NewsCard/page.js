@@ -6,7 +6,7 @@ export default function NewsCard({ article }) {
 
   return (
     <div className="bg-base-100">
-      <a href={href} className="relative block w-full h-56 mb-3 group overflow-hidden border border-white">
+      <a href={href} className="relative block w-full h-56 mb-3 group overflow-hidden">
         <Image
           src={image}
           className="object-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-105"
