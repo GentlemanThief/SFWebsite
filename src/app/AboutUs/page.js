@@ -14,7 +14,7 @@ export default function AboutUs() {
       <AngledSpacer />
       <div id="about-us">
         <TitleHeader title="About Us :" />
-        <article className="pt-3">
+        <article className="pt-4">
           <div className="grid items-center grid-cols-1 md:grid-cols-2 bg-base-100">
             <div className="order-2 md:order-1">
               <AboutUsCarousel className="order-1" />

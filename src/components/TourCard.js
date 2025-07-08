@@ -7,11 +7,11 @@ const TourCard = ({ tour }) => {
 
   return (
     <div
-      className={`relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500 border ${
+      className={`relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500 ${
         isLarge ? "md:col-span-2 lg:row-span-2 lg:h-full" : ""
       }`}
     >
-      <div className="absolute top-0 bottom-0 left-0 right-0 bg-base-100 overflow-hidden rounded-xl">
+      <div className="absolute top-0 bottom-0 left-0 right-0 bg-base-100 overflow-hidden">
         <a href={videoUrl} target="_blank" rel="noopener noreferrer">
           <Image
             src={imageUrl}

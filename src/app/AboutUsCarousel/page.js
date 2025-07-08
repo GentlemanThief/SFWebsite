@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function AboutUsCarousel() {
   return (
     <div>
-      <div className="carousel w-full h-[750px]">
+            <div className="carousel w-full h-[700px]">
         <div id="slide1" className="carousel-item relative w-full">
           <Image
             src="/AboutUsImages/FaOpSSdVUAEV8eE_1512x.webp"
             fill
-            className="object-cover"
+            className="object-cover block align-bottom"
             alt="GroupPhoto1"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -30,7 +30,7 @@ export default function AboutUsCarousel() {
           <Image
             src="/AboutUsImages/Carousel1.jpg"
             fill
-            className="object-cover"
+            className="object-cover block align-bottom"
             alt="GroupPhoto2"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -52,7 +52,7 @@ export default function AboutUsCarousel() {
           <Image
             src="/AboutUsImages/Carousel2.jpg"
             fill
-            className="object-cover"
+            className="object-cover block align-bottom"
             alt="GroupPhoto3"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -77,7 +77,7 @@ export default function AboutUsCarousel() {
           <Image
             src="/AboutUsImages/Carousel3.jpg"
             fill
-            className="object-cover"
+            className="object-cover block align-bottom"
             alt="GroupPhoto4"
           />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">

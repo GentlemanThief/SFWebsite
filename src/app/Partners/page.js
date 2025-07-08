@@ -8,7 +8,7 @@ import AngledSpacer from "../../components/AngledSpacer";
 
 export default function Sponsors() {
   return (
-    <div id="partners" className="bg-base-200 pt-4">
+    <div id="partners" className="bg-base-200 pt-5">
       <AngledSpacer />
       <TitleWithDescription 
         title="Partners" 
