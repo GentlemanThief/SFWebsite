@@ -9,9 +9,9 @@ export default function Members() {
   return (
     <div id="members" className="bg-base-200 pt-4">
       <AngledSpacer />
-      <TitleWithDescription 
-        title="Members :" 
-        description="Meet the individuals who form the core of Team StrikeFirst in our 'Members' section. Each member brings their unique talents, passion, and gaming expertise to our diverse family. Discover the faces behind our success and get to know the driving force of our competitive spirit."
+      <TitleWithDescription
+        title="Members :"
+        description="Meet the individuals who form the core of Team StrikeFirst in our 'Members' section. Each member brings their unique talents, passion, and expertise to our diverse family. Discover the faces behind our success and get to know the driving force of our competitive spirit."
       />
       <section className="bg-base-200 px-4 pb-6 mx-auto max-w-8xl">
         <div className="p-2"></div>

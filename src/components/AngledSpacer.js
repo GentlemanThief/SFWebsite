@@ -1,7 +1,7 @@
 export default function AngledSpacer() {
   return (
     <div
-      className="h-[110px]"
+      className="h-[100px]"
       style={{
         backgroundColor: "hsl(var(--b2))",
         backgroundImage:
