@@ -7,7 +7,7 @@ const TourCard = ({ tour }) => {
 
   return (
     <div
-      className={`relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group dark:bg-gray-500 ${
+      className={`relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group border border-2 border-base-100 dark:bg-gray-500 ${
         isLarge ? "md:col-span-2 lg:row-span-2 lg:h-full" : ""
       }`}
     >

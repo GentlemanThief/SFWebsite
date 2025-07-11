@@ -37,8 +37,8 @@ export default function Hero() {
             aria-label="Background video"
             poster="/Strikefirsthero-poster.png"
           >
-            <source src="StrikeFirstHero.webm" type="video/webm" />
-            <source src="StrikeFirstHero.mp4" type="video/mp4" />
+            <source src="StrikeFirstHero3.webm" type="video/webm" />
+            <source src="StrikeFirstHero3.mp4" type="video/mp4" />
           </video>
           )}
         </div>
