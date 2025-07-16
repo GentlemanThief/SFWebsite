@@ -1,99 +1,81 @@
 import Image from "next/image";
+import { useState } from "react";
 
 export default function AboutUsCarousel() {
+  // Slide data structure extracted from the existing carousel
+  const slides = [
+    {
+      id: 0,
+      src: "/AboutUsImages/FaOpSSdVUAEV8eE_1512x.webp",
+      alt: "GroupPhoto1"
+    },
+    {
+      id: 1,
+      src: "/AboutUsImages/Carousel1.jpg",
+      alt: "GroupPhoto2"
+    },
+    {
+      id: 2,
+      src: "/AboutUsImages/Carousel2.jpg",
+      alt: "GroupPhoto3"
+    },
+    {
+      id: 3,
+      src: "/AboutUsImages/Carousel3.jpg",
+      alt: "GroupPhoto4",
+      className: "brightness-90"
+    }
+  ];
+
+  // State management for current active slide
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Core navigation functions
+  const goToNext = () => {
+    setCurrentSlide((currentSlide + 1) % slides.length);
+  };
+
+  const goToPrevious = () => {
+    setCurrentSlide((currentSlide - 1 + slides.length) % slides.length);
+  };
+
+  const goToSlide = (slideIndex) => {
+    if (slideIndex >= 0 && slideIndex < slides.length) {
+      setCurrentSlide(slideIndex);
+    }
+  };
+
   return (
     <div>
-            <div className="carousel w-full h-[700px]">
-        <div id="slide1" className="carousel-item relative w-full">
-          <Image
-            src="/AboutUsImages/FaOpSSdVUAEV8eE_1512x.webp"
-            fill
-            className="object-cover block align-bottom"
-            alt="GroupPhoto1"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a
-              href="#slide1"
-              className="btn btn-circle bg-base-100 hover:bg-base-200"
-            >
-              ❮
-            </a>
-            <a
-              href="#slide2"
-              className="btn btn-circle bg-base-100 hover:bg-base-200"
-            >
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide2" className="carousel-item relative w-full">
-          <Image
-            src="/AboutUsImages/Carousel1.jpg"
-            fill
-            className="object-cover block align-bottom"
-            alt="GroupPhoto2"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a
-              href="#slide1"
-              className="btn btn-circle bg-base-100 hover:bg-base-200"
-            >
-              ❮
-            </a>
-            <a
-              href="#slide3"
-              className="btn btn-circle bg-base-100 hover:bg-base-200"
-            >
-              ❯
-            </a>
-          </div>
-        </div>
-        <div id="slide3" className="carousel-item relative w-full">
-          <Image
-            src="/AboutUsImages/Carousel2.jpg"
-            fill
-            className="object-cover block align-bottom"
-            alt="GroupPhoto3"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a
-              href="#slide2"
-              className="btn btn-circle bg-base-100 hover:bg-base-200"
-            >
-              ❮
-            </a>
-            <a
-              href="#slide4"
-              className="btn btn-circle bg-base-100 hover:bg-base-200"
-            >
-              ❯
-            </a>
-          </div>
-        </div>
-        <div
-          id="slide4"
-          className="carousel-item relative w-full brightness-90"
+      <div className="w-full h-[700px] relative overflow-hidden">
+        <div 
+          className="flex transition-transform duration-300 ease-in-out h-full"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
         >
-          <Image
-            src="/AboutUsImages/Carousel3.jpg"
-            fill
-            className="object-cover block align-bottom"
-            alt="GroupPhoto4"
-          />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a
-              href="#slide3"
-              className="btn btn-circle bg-base-100 hover:bg-base-200"
-            >
-              ❮
-            </a>
-            <a
-              href="#slide1"
-              className="btn btn-circle bg-base-100 hover:bg-base-200"
-            >
-              ❯
-            </a>
-          </div>
+          {slides.map((slide, index) => (
+            <div key={slide.id} className={`min-w-full flex-shrink-0 relative ${slide.className || ''}`}>
+              <Image
+                src={slide.src}
+                fill
+                className="object-cover block align-bottom"
+                alt={slide.alt}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <button
+            onClick={goToPrevious}
+            className="btn btn-circle bg-base-100 hover:bg-base-200"
+          >
+            ❮
+          </button>
+          <button
+            onClick={goToNext}
+            className="btn btn-circle bg-base-100 hover:bg-base-200"
+          >
+            ❯
+          </button>
         </div>
       </div>
     </div>
