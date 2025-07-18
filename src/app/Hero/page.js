@@ -1,34 +1,14 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 export default function Hero() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
   return (
     <div id="hero" className="hero min-h-screen">
       <div className="hero-overlay">
-                <div className="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
-          {isMobile ? (
-            <img
-              src="/og-image.jpg"
-              alt="Team StrikeFirst"
-              className="min-w-full min-h-full absolute object-cover"
-            />
-          ) : (
-                    <video
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
+          {/* Background video for all screen sizes */}
+          <video
             className="min-w-full min-h-full absolute object-cover"
             autoPlay
             muted
@@ -37,10 +17,10 @@ export default function Hero() {
             aria-label="Background video"
             poster="/Strikefirsthero-poster.png"
           >
-            <source src="StrikeFirstHero3.webm" type="video/webm" />
-            <source src="StrikeFirstHero3.mp4" type="video/mp4" />
+            <source src="/Strikefirsthero3.webm" type="video/webm" />
+            <source src="/Strikefirsthero3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
           </video>
-          )}
         </div>
       </div>
       <div className="hero-content text-center text-white">
