@@ -47,19 +47,6 @@ const socialLinks = [
     color: "primary",
     ariaLabel: "Follow us on Twitch",
   },
-  // Add Discord and TikTok if you have accounts
-  // {
-  //   href: "https://discord.gg/your-server",
-  //   icon: DiscordIcon,
-  //   color: "primary",
-  //   ariaLabel: "Join our Discord"
-  // },
-  // {
-  //   href: "https://tiktok.com/@teamstrike1st",
-  //   icon: TikTokIcon,
-  //   color: "accent",
-  //   ariaLabel: "Follow us on TikTok"
-  // },
 ];
 
 export default function AboutUs() {
@@ -74,9 +61,6 @@ export default function AboutUs() {
               <AboutUsCarousel className="order-1" />
             </div>
             <div className="order-1 w-full mx-auto md:w-3/4 md:px-0 p-3 order-2">
-              <h1 className="text-6xl flex justify-center font-black text-base-content">
-                Our Story
-              </h1>
               <FadeIn>
                 <SectionDescription>
                   Cultivating champions and fostering camaraderie, Team
