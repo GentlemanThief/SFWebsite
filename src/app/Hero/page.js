@@ -17,8 +17,8 @@ export default function Hero() {
             aria-label="Background video"
             poster="/Strikefirsthero-poster.png"
           >
-            <source src="/Strikefirsthero3.webm" type="video/webm" />
-            <source src="/Strikefirsthero3.mp4" type="video/mp4" />
+            <source src="/Strikefirsthero2.webm" type="video/webm" />
+            <source src="/Strikefirsthero2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
