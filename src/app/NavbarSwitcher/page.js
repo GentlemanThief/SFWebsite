@@ -199,7 +199,7 @@ export default function NavbarSwitch() {
           </label>
           <ul
             tabIndex="0"
-            className={`menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow-2xl rounded-2xl w-56 dropdown-end ${
+            className={`menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow-2xl rounded w-56 dropdown-end ${
               scrolled
                 ? "bg-base-100/95 backdrop-blur-xl border border-primary/10"
                 : "bg-white/5 backdrop-blur-sm border border-white/5 !text-white"
@@ -252,7 +252,7 @@ export default function NavbarSwitch() {
           </label>
           <ul
             tabIndex="0"
-            className={`menu menu-sm dropdown-content mt-3 z-[1] p-3 rounded-2xl w-48 ${
+            className={`menu menu-sm dropdown-content mt-3 z-[1] p-3 rounded w-48 ${
               scrolled
                 ? "shadow-2xl bg-base-100/95 backdrop-blur-xl border border-base-300/10"
                 : "shadow-xl bg-white/5 backdrop-blur-sm border border-white/5 !text-white"
@@ -328,7 +328,7 @@ export default function NavbarSwitch() {
           </label>
           <ul
             tabIndex="0"
-            className={`menu menu-sm dropdown-content mt-3 z-[1] p-4 rounded-2xl w-64 ${
+            className={`menu menu-sm dropdown-content mt-3 z-[1] p-4 rounded w-64 ${
               scrolled
                 ? "shadow-2xl bg-base-100/95 backdrop-blur-xl border border-secondary/10"
                 : "shadow-xl bg-white/5 backdrop-blur-sm border border-white/5 !text-white"
