@@ -14,13 +14,13 @@ export default function NavbarSwitch() {
   };
 
   const navItems = [
-  { name: "Home", href: "#hero", icon: "🏡" },
-  { name: "About Us", href: "#about-us", icon: "🧑‍🤝‍🧑" },
-  { name: "News", href: "#news", icon: "📅" },
-  { name: "Partners", href: "#partners", icon: "🤝🏻" },
-  { name: "Tour", href: "#tour", icon: "✈️" },
-  { name: "Members", href: "#members", icon: "⭐" },
-];
+    { name: "Home", href: "#hero", icon: "🏡" },
+    { name: "About Us", href: "#about-us", icon: "🧑‍🤝‍🧑" },
+    { name: "News", href: "#news", icon: "📅" },
+    { name: "Partners", href: "#partners", icon: "🤝🏻" },
+    { name: "Tour", href: "#tour", icon: "✈️" },
+    { name: "Members", href: "#members", icon: "⭐" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,11 +49,11 @@ export default function NavbarSwitch() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [navItems]);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", themes[currentTheme]);
-  }, [currentTheme]);
+  }, [currentTheme, themes]);
 
   const changeTheme = (theme) => {
     setCurrentTheme(theme);
@@ -64,12 +64,13 @@ export default function NavbarSwitch() {
       const element = document.querySelector(href);
       if (element) {
         const scrollOffset = 100; // Consistent with activeSection logic
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+        const elementPosition =
+          element.getBoundingClientRect().top + window.scrollY;
         const offsetPosition = elementPosition - scrollOffset;
 
         window.scrollTo({
           top: offsetPosition,
-          behavior: 'smooth'
+          behavior: "smooth",
         });
       }
     } else {
@@ -98,16 +99,20 @@ export default function NavbarSwitch() {
         <a
           href="/"
           className={`btn btn-ghost btn-xl normal-case font-black text-3xl sm:text-4xl transition-all duration-300 hover:scale-105 ${
-            scrolled ? "" : "text-white hover:text-primary drop-shadow-lg"
+            scrolled ? "" : "!text-white hover:!text-white drop-shadow-lg"
           }`}
         >
           <span className="relative">
             <span className="relative inline-block">
-                <span className={`text-3xl sm:text-4xl font-black tracking-tight ${scrolled ? 'text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary' : 'text-white'} inline-block`}>
-                  StrikeFirst
-                </span>
-                <span className="absolute left-1/2 -bottom-1.5 w-3/4 h-0.5 -translate-x-1/2 bg-white rounded-full" />
+              <span
+                className={`text-3xl sm:text-4xl font-black tracking-tight ${scrolled ? "text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary" : "!text-white"} inline-block`}
+              >
+                StrikeFirst
               </span>
+              <span
+                className={`absolute left-1/2 -bottom-1.5 w-3/4 h-0.5 -translate-x-1/2 rounded-full ${scrolled ? "bg-primary" : "bg-white"}`}
+              />
+            </span>
           </span>
         </a>
       </div>
@@ -116,21 +121,8 @@ export default function NavbarSwitch() {
         <ul className="menu menu-horizontal font-bold space-x-2">
           {navItems.map((item, idx) => {
             const isActive = activeSection === item.href.substring(1);
-            // Hover color mapping per user request
-            const hoverColor = (() => {
-              switch (item.name) {
-                case "Home":
-                case "News":
-                case "Tour":
-                  return "primary";
-                case "About Us":
-                case "Partners":
-                case "Members":
-                  return "secondary";
-                default:
-                  return "primary";
-              }
-            })();
+            // Use consistent grey hover effects with DaisyUI theme colors
+            const hoverColor = "base-300";
             return (
               <li key={item.name} className="relative">
                 <button
@@ -139,11 +131,11 @@ export default function NavbarSwitch() {
   ${
     scrolled
       ? isActive
-        ? `bg-${hoverColor}/10 text-${hoverColor} shadow-sm`
-        : `hover:bg-${hoverColor}/10 hover:text-${hoverColor}`
+        ? "bg-base-300/20 text-base-content shadow-sm"
+        : "hover:bg-base-300/10 hover:text-base-content"
       : isActive
-        ? "bg-white/10 text-white shadow-sm backdrop-blur-sm"
-        : "hover:bg-white/10 hover:text-white text-white/90 hover:bg-secondary/10 hover:text-secondary"
+        ? "bg-white/10 !text-white shadow-sm backdrop-blur-sm"
+        : "hover:bg-white/10 hover:!text-white !text-white"
   }
 `}
                 >
@@ -161,16 +153,16 @@ export default function NavbarSwitch() {
                     className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 transition-all duration-300 ${
                       isActive
                         ? scrolled
-                          ? "w-full bg-accent"
+                          ? "w-full bg-base-300"
                           : "w-full bg-white"
                         : scrolled
-                          ? "w-0 group-hover:w-full bg-accent"
+                          ? "w-0 group-hover:w-full bg-base-300"
                           : "w-0 group-hover:w-full bg-white"
                     }`}
                   ></div>
 
                   {/* Hover glow effect */}
-                  <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-primary/0 via-primary/5 to-accent/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 rounded-lg bg-base-300/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </button>
               </li>
             );
@@ -184,7 +176,7 @@ export default function NavbarSwitch() {
           <label
             tabIndex="0"
             className={`btn btn-ghost btn-circle transition-all duration-300 hover:scale-110 ${
-              scrolled ? "hover:bg-primary/10" : "hover:bg-white/10"
+              scrolled ? "hover:bg-base-300/10" : "hover:bg-white/10"
             }`}
           >
             <svg
@@ -193,7 +185,9 @@ export default function NavbarSwitch() {
               height="20"
               fill="currentColor"
               className={`transition-colors duration-300 ${
-                scrolled ? "text-base-content hover:text-primary" : "text-white"
+                scrolled
+                  ? "text-base-content hover:text-base-300"
+                  : "!text-white"
               }`}
               viewBox="0 0 16 16"
             >
@@ -205,17 +199,21 @@ export default function NavbarSwitch() {
           </label>
           <ul
             tabIndex="0"
-            className={`menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow-2xl rounded-2xl w-56 border border-primary/10 dropdown-end ${
+            className={`menu menu-sm dropdown-content mt-3 z-[1] p-3 shadow-2xl rounded-2xl w-56 dropdown-end ${
               scrolled
-                ? "bg-base-100/95 backdrop-blur-xl"
-                : "bg-base-100/20 backdrop-blur-md border-white/10"
+                ? "bg-base-100/95 backdrop-blur-xl border border-primary/10"
+                : "bg-white/5 backdrop-blur-sm border border-white/5 !text-white"
             }`}
           >
             {navItems.map((item) => (
               <li key={item.name}>
                 <button
                   onClick={() => smoothScroll(item.href)}
-                  className="flex items-center space-x-3 p-3 rounded-lg hover:bg-primary/10 transition-colors duration-300"
+                  className={`flex items-center space-x-3 p-3 rounded-lg transition-colors duration-300 ${
+                    scrolled
+                      ? "hover:bg-base-300/10"
+                      : "hover:bg-white/10 !text-white"
+                  }`}
                 >
                   <span className="transition-all duration-300 text-lg md:text-lg">
                     <IconEmoji>{item.icon}</IconEmoji>
@@ -232,7 +230,7 @@ export default function NavbarSwitch() {
           <label
             tabIndex="0"
             className={`btn btn-ghost btn-circle transition-all duration-300 hover:scale-110 group ${
-              scrolled ? "hover:bg-accent/10" : "hover:bg-white/10"
+              scrolled ? "hover:bg-base-300/10" : "hover:bg-white/10"
             }`}
           >
             <div className="relative">
@@ -243,8 +241,8 @@ export default function NavbarSwitch() {
                 fill="currentColor"
                 className={`transition-all duration-300 group-hover:rotate-180 ${
                   scrolled
-                    ? "text-base-content hover:text-accent"
-                    : "text-white"
+                    ? "text-base-content hover:text-base-300"
+                    : "!text-white"
                 }`}
                 viewBox="0 0 16 16"
               >
@@ -256,8 +254,8 @@ export default function NavbarSwitch() {
             tabIndex="0"
             className={`menu menu-sm dropdown-content mt-3 z-[1] p-3 rounded-2xl w-48 ${
               scrolled
-                ? "shadow-2xl bg-base-100/95 backdrop-blur-xl border border-accent/10"
-                : "shadow-xl bg-base-100/20 backdrop-blur-md border border-white/10"
+                ? "shadow-2xl bg-base-100/95 backdrop-blur-xl border border-base-300/10"
+                : "shadow-xl bg-white/5 backdrop-blur-sm border border-white/5 !text-white"
             }`}
           >
             <li>
@@ -265,8 +263,12 @@ export default function NavbarSwitch() {
                 onClick={() => changeTheme("theme-dark")}
                 className={`flex items-center space-x-3 p-3 rounded-lg transition-all duration-300 ${
                   currentTheme === "theme-dark"
-                    ? "bg-accent/20 text-accent"
-                    : "hover:bg-accent/10"
+                    ? scrolled
+                      ? "bg-base-300/20 text-base-content"
+                      : "bg-white/5 !text-white"
+                    : scrolled
+                      ? "hover:bg-base-300/10 hover:text-base-content"
+                      : "hover:bg-white/5 hover:!text-white !text-white"
                 }`}
               >
                 <span>🌙</span>
@@ -278,8 +280,12 @@ export default function NavbarSwitch() {
                 onClick={() => changeTheme("theme-light")}
                 className={`flex items-center space-x-3 p-3 rounded-lg transition-all duration-300 ${
                   currentTheme === "theme-light"
-                    ? "bg-accent/20 text-accent"
-                    : "hover:bg-accent/10"
+                    ? scrolled
+                      ? "bg-base-300/20 text-base-content"
+                      : "bg-white/5 !text-white"
+                    : scrolled
+                      ? "hover:bg-base-300/10 hover:text-base-content"
+                      : "hover:bg-white/5 hover:!text-white !text-white"
                 }`}
               >
                 <span>☀️</span>
@@ -306,7 +312,7 @@ export default function NavbarSwitch() {
                 className={`transition-colors duration-300 ${
                   scrolled
                     ? "text-base-content hover:text-secondary"
-                    : "text-white"
+                    : "!text-white"
                 }`}
                 viewBox="0 0 16 16"
               >
@@ -325,17 +331,23 @@ export default function NavbarSwitch() {
             className={`menu menu-sm dropdown-content mt-3 z-[1] p-4 rounded-2xl w-64 ${
               scrolled
                 ? "shadow-2xl bg-base-100/95 backdrop-blur-xl border border-secondary/10"
-                : "shadow-xl bg-base-100/20 backdrop-blur-md border border-white/10"
+                : "shadow-xl bg-white/5 backdrop-blur-sm border border-white/5 !text-white"
             }`}
           >
             <li>
               <div className="flex flex-col items-center space-y-3 p-4">
                 <div className="text-4xl">🛒</div>
-                <p className="text-center text-sm opacity-70">
+                <p
+                  className={`text-center text-sm opacity-70 ${scrolled ? "" : "!text-white"}`}
+                >
                   Store coming soon...
                 </p>
-                <div className="w-full h-1 bg-secondary/20 rounded-full overflow-hidden">
-                  <div className="h-full bg-gradient-to-r from-secondary to-accent w-3/4 rounded-full animate-pulse"></div>
+                <div
+                  className={`w-full h-1 rounded-full overflow-hidden ${scrolled ? "bg-secondary/20" : "bg-white/20"}`}
+                >
+                  <div
+                    className={`h-full w-3/4 rounded-full animate-pulse ${scrolled ? "bg-gradient-to-r from-secondary to-accent" : "bg-white"}`}
+                  ></div>
                 </div>
               </div>
             </li>

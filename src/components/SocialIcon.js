@@ -8,7 +8,7 @@ export default function SocialIcon({ href, icon: IconComponent, color = "primary
   return (
     <a href={href} aria-label={ariaLabel}>
       <IconComponent 
-        className={`fill-current border p-3 ${colorClasses[color]} transition-transform duration-300 ease-in-out hover:-translate-y-1`}
+        className={`fill-current border border-base-content p-3 ${colorClasses[color]} transition-transform duration-300 ease-in-out hover:-translate-y-1`}
         width="50"
         height="50"
       />

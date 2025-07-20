@@ -4,55 +4,63 @@ export const membersData = [
     realName: "Anthony Velonza",
     image: "/MemberImages/CobraKaiToneA.jpg",
     description: `Cobra Kai Tone, visionary founder and CEO of Team StrikeFirst, has devoted himself to building a team that excels not only in the realm of eSports but also serves as a genuine embodiment of the fighting game community. He firmly believes these communities are not solely defined by titles and accolades but also by nurturing a sense of camaraderie through a shared passion for gaming. What truly sets him apart is his steadfast dedication to a greater mission in gaming—an ethos that reaches far beyond the mere pursuit of victory.`,
-    gradient: "text-transparent bg-clip-text bg-gradient-to-r from-primary-content via-primary to-primary-focus",
+    gradient:
+      "text-transparent bg-clip-text bg-gradient-to-r from-primary-content via-primary to-primary-focus",
   },
   {
     name: "AdamYUKI",
     realName: "Adnan Rana",
     image: "/MemberImages/AdamYukiA.jpg",
     description: `AdamYuki, the embodiment of suavity and intellectual prowess, brings a touch of sophistication to the world of competitive gaming. His refined demeanor and striking appearance are matched only by his razor-sharp skills in the game. With a charming exterior that conceals a ruthless competitive spirit, AdamYuki is a formidable force in the virtual arena. As an integral part of the American VF community, he has not only competed at the highest levels but has also played a pivotal and guiding role in organizing world renowned VF events.`,
-    gradient: "text-transparent bg-clip-text bg-gradient-to-r from-accent-content via-accent to-accent-focus",
+    gradient:
+      "text-transparent bg-clip-text bg-gradient-to-r from-accent-content via-accent to-accent-focus",
   },
   {
     name: "CobraTron",
     realName: "Ramon Velonza",
     image: "/MemberImages/CobraTronA.jpg",
     description: `Cobratron, a calm, cool, and collected individual both in and out of the gaming arena, embodies a personality marked by composure and an appreciation for the world of gaming. His early immersion in video games cultivated a deep appreciation for their profound impact on the human experience, relishing in the limitless array of choices that gaming provides. Cobratron is an innovator, often seen with his signature leverless controller, making him a trailblazer among the first to succeed with this pioneering input method.`,
-    gradient: "text-transparent bg-clip-text bg-gradient-to-r from-secondary-content via-secondary to-secondary-focus",
+    gradient:
+      "text-transparent bg-clip-text bg-gradient-to-r from-secondary-content via-secondary to-secondary-focus",
   },
   {
     name: "Cookye Fu Sung",
     realName: "Elizabeth Saxton",
     image: "/MemberImages/CookyeA.jpg",
     description: `Cookye, an authoritative figure in the world of retro gaming, possesses a distinctive and spiritual connection to gaming that goes beyond the mere act of playing. With a diverse background that includes studies in China, Cookye seamlessly integrates her passion for gaming into her work in the performing arts. As the CEO of 'Goddesses Media,' she leverages her expertise in choreography to create captivating performances that blend dance, martial arts, and acrobatics, inspired by iconic characters in both anime and gaming.`,
-    gradient: "text-transparent bg-clip-text bg-gradient-to-r from-primary-content via-primary to-primary-focus",
+    gradient:
+      "text-transparent bg-clip-text bg-gradient-to-r from-primary-content via-primary to-primary-focus",
   },
   {
     name: "CrazyDrunk",
     realName: "Orvenn Lozada",
     image: "/MemberImages/CrazyDrunkA.jpg",
     description: `CrazyDrunk, known for his silent demeanor and expressive playing style, is a force to be reckoned with in the world of competitive gaming. While he may not be the loudest voice in the room, his gameplay speaks volumes. With an introverted personality that belies his fierce skills, CrazyDrunk has become a respected figure in the Virtua Fighter community. As a proud member of Team StrikeFirst, he continues to make his mark on the global stage, showing that true talent transcends words.`,
-    gradient: "text-transparent bg-clip-text bg-gradient-to-r from-accent-content via-accent to-accent-focus",
+    gradient:
+      "text-transparent bg-clip-text bg-gradient-to-r from-accent-content via-accent to-accent-focus",
   },
   {
     name: "Dr. B (Galaxy B)",
     realName: "Brandon Chaney",
     image: "/MemberImages/DRBA.jpg",
     description: `Dr. B, also known as Galaxy B, is celebrated for his creative and distinctive gameplay style, which mirrors the artistic innovation he brings to the music industry. A revered figure in the Capcom vs. SNK 2 community, Dr. B consistently injects excitement into every arena he enters. Furthermore, within StrikeFirst, he stands as a creative powerhouse, utilizing his multifaceted talents beyond gaming to craft engaging social media content, seamlessly blending his passion for music, gaming, and creation into a captivating presence.`,
-    gradient: "text-transparent bg-clip-text bg-gradient-to-r from-secondary-content via-secondary to-secondary-focus",
+    gradient:
+      "text-transparent bg-clip-text bg-gradient-to-r from-secondary-content via-secondary to-secondary-focus",
   },
   {
     name: "GentlemanThief",
     realName: "Avery Carey",
     image: "/MemberImages/GentlemanThiefA.jpg",
     description: `GentlemanThief, a top-tier player across multiple fighting games, exemplifies a gameplay that reflects and hinges upon an underlying philosophy about fighting games. While initially making a name for himself in the Virtua Fighter series, GentlemanThief has extended his skill and reach to all fighting games within his purview. With a profound understanding of the intricacies of fighting games shaping his play style, GentlemanThief emerges as a formidable force in any game he sets his sights on.`,
-    gradient: "text-transparent bg-clip-text bg-gradient-to-r from-primary-content via-primary to-primary-focus",
+    gradient:
+      "text-transparent bg-clip-text bg-gradient-to-r from-primary-content via-primary to-primary-focus",
   },
   {
     name: "Tek S Neo",
     realName: "Antar Brown",
     image: "/MemberImages/TekA.jpg",
     description: `Tek, a steely-eyed veteran and widely recognized figure in the fighting game community, possesses a network so expansive that even a brief interaction might leave you wondering if there's anyone beyond his reach. With his extensive connections, undeniable skill, and profound understanding of the fighting game landscape, Tek, as well as competing, serves as Team StrikeFirst's coach, steadfastly dedicated to elevating the team's skill level and is poised to propel their capabilities to new heights and beyond.`,
-    gradient: "text-transparent bg-clip-text bg-gradient-to-r from-accent-content via-accent to-accent-focus",
+    gradient:
+      "text-transparent bg-clip-text bg-gradient-to-r from-accent-content via-accent to-accent-focus",
   },
 ];
