@@ -35,15 +35,15 @@ const TourCard = ({ tour }) => {
           rel="noopener noreferrer"
           href={videoUrl}
           target="_blank"
-          className={`py-2 font-black text-white group-hover:underline ${isLarge ? "text-5xl" : "text-sm"}`}
+          className={`py-2 font-black text-white group-hover:underline ${isLarge ? "text-5xl" : "text-md"}`}
         >
           {eventName}
         </a>
         <div className="flex flex-col justify-start text-center text-white group-hover:underline">
-          <span className={`font-black ${isLarge ? "text-4xl" : "text-sm"}`}>
+          <span className={`font-black ${isLarge ? "text-4xl" : "text-md"}`}>
             {location.split(",")[0]},
           </span>
-          <span className={`text-white ${isLarge ? "text-xl" : "text-sm"}`}>
+          <span className={`text-white ${isLarge ? "text-xl" : "text-md"}`}>
             {location.split(",")[1]}
           </span>
         </div>
