@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 export default function Hero() {
   const [videoName, setVideoName] = useState("Strikefirsthero1"); // Default fallback
-  
+
   useEffect(() => {
     // Only run random selection on client side after hydration
     const availableVideos = [1, 2, 3];
@@ -18,6 +18,7 @@ export default function Hero() {
       <div className="hero-overlay">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
           <video
+            key={videoName}
             className="min-w-full min-h-full absolute object-cover"
             autoPlay
             muted

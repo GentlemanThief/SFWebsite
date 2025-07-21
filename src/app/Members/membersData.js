@@ -35,7 +35,7 @@ export const membersData = [
     name: "CrazyDrunk",
     realName: "Orvenn Lozada",
     image: "/MemberImages/CrazyDrunkA.jpg",
-    description: `CrazyDrunk, known for his silent demeanor and expressive playing style, is a force to be reckoned with in the world of competitive gaming. While he may not be the loudest voice in the room, his gameplay speaks volumes. With an introverted personality that belies his fierce skills, CrazyDrunk has become a respected figure in the Virtua Fighter community. As a proud member of Team StrikeFirst, he continues to make his mark on the global stage, showing that true talent transcends words.`,
+    description: `CrazyDrunk, known for his silent demeanor and expressive playing style, is a force to be reckoned with in the world of competitive gaming. While he may not be the loudest voice in the room, his gameplay speaks volumes. With an introverted personality that belies his fierce skills, CrazyDrunk has become a highly respected figure in the Virtua Fighter community. As a proud member of Team StrikeFirst, he continues to consistently make his mark on the global stage, showing that true talent transcends words.`,
     gradient:
       "text-transparent bg-clip-text bg-gradient-to-r from-accent-content via-accent to-accent-focus",
   },
@@ -51,7 +51,7 @@ export const membersData = [
     name: "GentlemanThief",
     realName: "Avery Carey",
     image: "/MemberImages/GentlemanThiefA.jpg",
-    description: `GentlemanThief, a top-tier player across multiple fighting games, exemplifies a gameplay that reflects and hinges upon an underlying philosophy about fighting games. While initially making a name for himself in the Virtua Fighter series, GentlemanThief has extended his skill and reach to all fighting games within his purview. With a profound understanding of the intricacies of fighting games shaping his play style, GentlemanThief emerges as a formidable force in any game he sets his sights on.`,
+    description: `GentlemanThief, a top-tier player across multiple fighting games, exemplifies a gameplay approach that reflects and hinges upon an underlying philosophy about fighting games. While initially making a name for himself in the challenging VF series, GentlemanThief has successfully extended his skill and reach to all fighting games within his purview. With a profound understanding of the complex intricacies of fighting games fundamentally shaping his play style, GentlemanThief consistently emerges as a formidable force in any game he sets his sights on.`,
     gradient:
       "text-transparent bg-clip-text bg-gradient-to-r from-primary-content via-primary to-primary-focus",
   },
@@ -59,7 +59,7 @@ export const membersData = [
     name: "Tek S Neo",
     realName: "Antar Brown",
     image: "/MemberImages/TekA.jpg",
-    description: `Tek, a steely-eyed veteran and widely recognized figure in the fighting game community, possesses a network so expansive that even a brief interaction might leave you wondering if there's anyone beyond his reach. With his extensive connections, undeniable skill, and profound understanding of the fighting game landscape, Tek, as well as competing, serves as Team StrikeFirst's coach, steadfastly dedicated to elevating the team's skill level and is poised to propel their capabilities to new heights and beyond.`,
+    description: `Tek, a steely-eyed seasoned veteran and widely recognized figure in the fighting game community, possesses a network so expansive that even a brief interaction might leave you wondering if there's anyone beyond his reach. With his extensive professional connections, undeniable skill, and profound understanding of the fighting game landscape, Tek, as well as competing, serves as Team StrikeFirst's coach, steadfastly dedicated to elevating the team's skill level and is poised to propel their capabilities to new heights and beyond.`,
     gradient:
       "text-transparent bg-clip-text bg-gradient-to-r from-accent-content via-accent to-accent-focus",
   },

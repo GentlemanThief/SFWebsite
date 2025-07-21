@@ -15,7 +15,7 @@ export default function PartnerCard({ partner }) {
   } = partner;
 
   return (
-    <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-8 md:gap-x-16 bg-base-100">
+    <div className="flex flex-col-reverse md:grid md:items-center md:grid-cols-2 gap-y-10 gap-x-8 md:gap-x-16 bg-base-100">
       <div className={`${order === 2 ? "md:order-2" : ""} p-6 md:p-10 flex flex-col justify-center h-full`}>
         <h2 className={titleClass}>{name}</h2>
         <FadeIn>
