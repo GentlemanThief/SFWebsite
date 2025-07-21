@@ -116,7 +116,6 @@ export default function NavbarSwitch() {
         <ul className="menu menu-horizontal font-bold space-x-2">
           {navItems.map((item, idx) => {
             const isActive = activeSection === item.href.substring(1);
-            // Use consistent grey hover effects with DaisyUI theme colors
             const hoverColor = "base-300";
             return (
               <li key={item.name} className="relative">
@@ -155,8 +154,6 @@ export default function NavbarSwitch() {
                           : "w-0 group-hover:w-full bg-white"
                     }`}
                   ></div>
-
-
                 </button>
               </li>
             );

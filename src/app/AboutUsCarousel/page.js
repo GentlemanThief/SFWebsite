@@ -66,13 +66,13 @@ export default function AboutUsCarousel() {
         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
           <button
             onClick={goToPrevious}
-            className="btn btn-circle bg-base-100 hover:bg-base-200"
+            className="btn btn-square bg-base-100 hover:bg-base-200 shadow-lg border-2 border-base-300"
           >
             ❮
           </button>
           <button
             onClick={goToNext}
-            className="btn btn-circle bg-base-100 hover:bg-base-200"
+            className="btn btn-square bg-base-100 hover:bg-base-200 shadow-lg border-2 border-base-300"
           >
             ❯
           </button>

@@ -27,7 +27,7 @@ export default function PartnerCard({ partner }) {
           {buttonText}
         </a>
       </div>
-      <div className="relative w-full h-full md:h-[450px] flex items-center justify-center">
+      <div className="relative w-full h-[300px] md:h-[450px] flex items-center justify-center">
         <a href={href} aria-label={`Visit ${name} website`} className="w-full h-full relative group overflow-hidden">
           <Image 
             src={image} 

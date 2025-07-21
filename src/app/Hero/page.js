@@ -1,12 +1,17 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Hero() {
-  const availableVideos = [1, 2, 3];
-  const randomIndex = Math.floor(Math.random() * availableVideos.length);
-  const videoNumber = availableVideos[randomIndex];
-  const videoName = `Strikefirsthero${videoNumber}`;
+  const [videoName, setVideoName] = useState("Strikefirsthero1"); // Default fallback
+  
+  useEffect(() => {
+    // Only run random selection on client side after hydration
+    const availableVideos = [1, 2, 3];
+    const randomIndex = Math.floor(Math.random() * availableVideos.length);
+    const videoNumber = availableVideos[randomIndex];
+    setVideoName(`Strikefirsthero${videoNumber}`);
+  }, []);
 
   return (
     <div id="hero" className="hero min-h-screen">
