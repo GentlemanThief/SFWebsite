@@ -3,10 +3,11 @@
 import React from "react";
 
 export default function Hero() {
-  // Randomly select a video number (0-3)
-  const videoNumber = Math.floor(Math.random() * 4);
-  const videoName =
-    videoNumber === 0 ? "Strikefirsthero" : `Strikefirsthero${videoNumber}`;
+  // Randomly select from available videos (1, 2, 3)
+  const availableVideos = [1, 2, 3];
+  const randomIndex = Math.floor(Math.random() * availableVideos.length);
+  const videoNumber = availableVideos[randomIndex];
+  const videoName = `Strikefirsthero${videoNumber}`;
 
   return (
     <div id="hero" className="hero min-h-screen">
@@ -33,7 +34,7 @@ export default function Hero() {
           <h1 className="xs:text-6xl sm:text-7xl md:text-9xl text-6xl font-black text-white flex justify-center">
             StrikeFirst
           </h1>
-          <p className="text-white text-md md:text-md">
+          <p className="text-white text-sm md:text-sm">
             We&lsquo;re a dedicated eSports team specializing in fighting games.
             From local showdowns to global tournaments, we travel the world,
             ready to conquer the virtual arena. Join us in the quest for
