@@ -93,8 +93,8 @@ export default function NavbarSwitch() {
       <div className="navbar-start relative z-10">
         <a
           href="/"
-          className={`btn btn-ghost btn-xl normal-case font-black text-3xl sm:text-4xl transition-all duration-300 hover:scale-105 ${
-            scrolled ? "" : "!text-white hover:!text-white drop-shadow-lg"
+          className={`normal-case font-black text-3xl sm:text-4xl transition-transform duration-300 hover:scale-105 ${
+            scrolled ? "" : "!text-white drop-shadow-lg"
           }`}
         >
           <span className="relative">
@@ -156,8 +156,7 @@ export default function NavbarSwitch() {
                     }`}
                   ></div>
 
-                  {/* Hover glow effect */}
-                  <div className="absolute inset-0 rounded-lg bg-base-300/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
                 </button>
               </li>
             );

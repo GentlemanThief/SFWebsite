@@ -3,7 +3,6 @@
 import React from "react";
 
 export default function Hero() {
-  // Randomly select from available videos (1, 2, 3)
   const availableVideos = [1, 2, 3];
   const randomIndex = Math.floor(Math.random() * availableVideos.length);
   const videoNumber = availableVideos[randomIndex];
@@ -13,7 +12,6 @@ export default function Hero() {
     <div id="hero" className="hero min-h-screen">
       <div className="hero-overlay">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
-          {/* Background video for all screen sizes */}
           <video
             className="min-w-full min-h-full absolute object-cover"
             autoPlay
@@ -34,7 +32,7 @@ export default function Hero() {
           <h1 className="xs:text-6xl sm:text-7xl md:text-9xl text-6xl font-black text-white flex justify-center">
             StrikeFirst
           </h1>
-          <p className="text-white text-sm md:text-sm">
+          <p className="text-white text-sm md:text-md">
             We&lsquo;re a dedicated eSports team specializing in fighting games.
             From local showdowns to global tournaments, we travel the world,
             ready to conquer the virtual arena. Join us in the quest for
