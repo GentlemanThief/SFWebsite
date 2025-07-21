@@ -3,6 +3,11 @@
 import React from "react";
 
 export default function Hero() {
+  // Randomly select a video number (0-3)
+  const videoNumber = Math.floor(Math.random() * 4);
+  const videoName =
+    videoNumber === 0 ? "Strikefirsthero" : `Strikefirsthero${videoNumber}`;
+
   return (
     <div id="hero" className="hero min-h-screen">
       <div className="hero-overlay">
@@ -17,8 +22,8 @@ export default function Hero() {
             aria-label="Background video"
             poster="/Strikefirsthero-poster.png"
           >
-            <source src="/Strikefirsthero2.webm" type="video/webm" />
-            <source src="/Strikefirsthero2.mp4" type="video/mp4" />
+            <source src={`/${videoName}.webm`} type="video/webm" />
+            <source src={`/${videoName}.mp4`} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -28,7 +33,7 @@ export default function Hero() {
           <h1 className="xs:text-6xl sm:text-7xl md:text-9xl text-6xl font-black text-white flex justify-center">
             StrikeFirst
           </h1>
-          <p className="text-white text-xs md:text-sm">
+          <p className="text-white text-md md:text-md">
             We&lsquo;re a dedicated eSports team specializing in fighting games.
             From local showdowns to global tournaments, we travel the world,
             ready to conquer the virtual arena. Join us in the quest for

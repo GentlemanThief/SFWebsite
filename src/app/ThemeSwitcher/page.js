@@ -3,12 +3,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function ThemeSwitcher() {
-  const [currentTheme, setCurrentTheme] = useState("theme-dark");
-
-  const themes = {
-    "theme-dark": "StrikeFirstDark",
-    "theme-light": "StrikeFirstLight",
-  };
+  const [currentTheme, setCurrentTheme] = useState("StrikeFirstDark");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", currentTheme);
@@ -40,10 +35,13 @@ export default function ThemeSwitcher() {
         className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 bg-opacity-0"
       >
         <li>
-          <button onClick={() => changeTheme("theme-dark")}>Dark Theme</button>
+          <button onClick={() => changeTheme("StrikeFirstDark")}>Dark Theme</button>
         </li>
         <li>
-          <button onClick={() => changeTheme("theme-light")}>Light Theme</button>
+          <button onClick={() => changeTheme("StrikeFirstLight")}>Light Theme</button>
+        </li>
+        <li>
+          <button onClick={() => changeTheme("Splatoon")}>🦑 Splatoon</button>
         </li>
       </ul>
     </div>

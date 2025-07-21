@@ -5,13 +5,8 @@ import IconEmoji from "./IconEmoji";
 
 export default function NavbarSwitch() {
   const [scrolled, setScrolled] = useState(false);
-  const [currentTheme, setCurrentTheme] = useState("theme-dark");
+  const [currentTheme, setCurrentTheme] = useState("StrikeFirstDark");
   const [activeSection, setActiveSection] = useState("home");
-
-  const themes = {
-    "theme-dark": "StrikeFirstDark",
-    "theme-light": "StrikeFirstLight",
-  };
 
   const navItems = [
     { name: "Home", href: "#hero", icon: "🏡" },
@@ -52,8 +47,8 @@ export default function NavbarSwitch() {
   }, [navItems]);
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", themes[currentTheme]);
-  }, [currentTheme, themes]);
+    document.documentElement.setAttribute("data-theme", currentTheme);
+  }, [currentTheme]);
 
   const changeTheme = (theme) => {
     setCurrentTheme(theme);
@@ -260,9 +255,9 @@ export default function NavbarSwitch() {
           >
             <li>
               <button
-                onClick={() => changeTheme("theme-dark")}
+                onClick={() => changeTheme("StrikeFirstDark")}
                 className={`flex items-center space-x-3 p-3 rounded-lg transition-all duration-300 ${
-                  currentTheme === "theme-dark"
+                  currentTheme === "StrikeFirstDark"
                     ? scrolled
                       ? "bg-base-300/20 text-base-content"
                       : "bg-white/5 !text-white"
@@ -277,9 +272,9 @@ export default function NavbarSwitch() {
             </li>
             <li>
               <button
-                onClick={() => changeTheme("theme-light")}
+                onClick={() => changeTheme("StrikeFirstLight")}
                 className={`flex items-center space-x-3 p-3 rounded-lg transition-all duration-300 ${
-                  currentTheme === "theme-light"
+                  currentTheme === "StrikeFirstLight"
                     ? scrolled
                       ? "bg-base-300/20 text-base-content"
                       : "bg-white/5 !text-white"
@@ -290,6 +285,23 @@ export default function NavbarSwitch() {
               >
                 <span>☀️</span>
                 <span>Light Theme</span>
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => changeTheme("Splatoon")}
+                className={`flex items-center space-x-3 p-3 rounded-lg transition-all duration-300 ${
+                  currentTheme === "Splatoon"
+                    ? scrolled
+                      ? "bg-base-300/20 text-base-content"
+                      : "bg-white/5 !text-white"
+                    : scrolled
+                      ? "hover:bg-base-300/10 hover:text-base-content"
+                      : "hover:bg-white/5 hover:!text-white !text-white"
+                }`}
+              >
+                <span>🦑</span>
+                <span>Splatoon</span>
               </button>
             </li>
           </ul>

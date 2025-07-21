@@ -71,7 +71,7 @@ export default function Footer() {
           <p className="text-4xl font-black tracking-tight md:leading-tight sm:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary inline-block">
             #StrikeFirstGaming
           </p>
-          <div className="text-base-content text-sm">
+          <div className="text-base-content text-md">
             StrikeFirst Gaming LLC.
             <br />
             Copyright © {new Date().getFullYear()} - All Rights Reserved.

@@ -24,7 +24,7 @@ export default function News() {
       <div className="flex justify-center">
         <button
           type="button"
-          className="px-6 py-4 text-sm rounded-sm hover:underline bg-base-100 text-base-content"
+          className="px-6 py-4 text-md rounded-sm hover:underline bg-base-100 text-base-content"
         >
           Load more posts...
         </button>
