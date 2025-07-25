@@ -43,7 +43,7 @@ export default function TitleWithDescription({ title, description }) {
         <div className="flex items-center justify-center lg:justify-start lg:col-span-4">
           <div className="max-w-4xl pr-6">
             {/* Subtle accent line */}
-            <div className="w-12 h-0.5 bg-gradient-to-r from-primary/30 to-transparent mb-3"></div>
+            <div className="w-12 h-0.5 bg-gradient-to-r from-primary/30 to-transparent"></div>
 
             {/* Description text */}
             <p className="text-base-content text-xs sm:text-base leading-snug font-light tracking-wide">
