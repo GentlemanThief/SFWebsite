@@ -3,12 +3,12 @@ const FadeIn = dynamic(() => import("./FadeIn"), { ssr: false });
 
 export default function TitleWithDescription({ title, description }) {
   return (
-    <div className="relative py-5 px-6 bg-base-100">
+    <div className="relative py-3 px-4 bg-base-100">
       {/* Subtle background accent elements */}
       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/3 to-transparent"></div>
 
       {/* Main container */}
-      <div className="relative max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-6 gap-4 items-center">
+      <div className="relative max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-6 gap-3 items-center">
         {/* Title Section - Left */}
         <div className="text-center lg:text-left lg:col-span-2 lg:pl-14">
           {/* Accent line above */}
