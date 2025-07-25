@@ -16,7 +16,7 @@ export default function NewsCard({ article }) {
           loading="lazy"
         />
       </a>
-      <h2 className="text-lg font-black text-center">
+      <h2 className="text-base sm:text-lg font-black text-center">
         <a href={href} className={className}>
           {title}
         </a>
