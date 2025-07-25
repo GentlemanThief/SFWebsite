@@ -19,7 +19,7 @@ export default function PartnerCard({ partner }) {
       <div className={`${order === 2 ? "md:order-2" : ""} p-6 md:p-10 flex flex-col justify-center h-full`}>
         <h2 className={titleClass}>{name}</h2>
         <FadeIn>
-          <p className="mb-6 text-base text-center text-base-content sm:text-left md:text-base">
+          <p className="mb-6 text-xs sm:text-base text-center text-base-content sm:text-left">
             {description}
           </p>
         </FadeIn>

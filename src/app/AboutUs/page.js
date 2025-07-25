@@ -79,7 +79,7 @@ export default function AboutUs() {
                     #StrikeFirstGaming
                   </h3>
                 </div>
-                <p className="text-md text-center text-base-content flex justify-center pb-2">
+                <p className="text-xs sm:text-base text-center text-base-content flex justify-center pb-2">
                   Follow Us On Social Media:
                 </p>
                 <div className="flex justify-center gap-2">

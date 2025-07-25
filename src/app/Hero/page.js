@@ -38,11 +38,10 @@ export default function Hero() {
           <h1 className="xs:text-6xl sm:text-7xl md:text-9xl text-6xl font-black text-white flex justify-center">
             StrikeFirst
           </h1>
-          <p className="text-white text-sm md:text-md">
+          <p className="text-white text-xs sm:text-base">
             We&lsquo;re a dedicated eSports team specializing in fighting games.
             From local showdowns to global tournaments, we travel the world,
-            ready to conquer the virtual arena. Join us in the quest for
-            victory!
+            ready to conquer the virtual arena.
           </p>
           <div className="flex justify-center absolute inset-x-0 bottom-0 h-16">
             <a href="#about-us">

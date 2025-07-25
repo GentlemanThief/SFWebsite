@@ -34,7 +34,7 @@ export default function MemberCard({ member }) {
           </h3>
         )}
         <FadeIn>
-          <p className="text-md text-left font-normal text-base-content py-2">
+          <p className="text-xs sm:text-base text-left font-normal text-base-content py-2">
             {description}
           </p>
         </FadeIn>

@@ -47,7 +47,7 @@ export default function TitleWithDescription({ title, description }) {
             <div className="w-12 h-0.5 bg-gradient-to-r from-primary/30 to-transparent mb-3"></div>
             
             {/* Description text */}
-            <p className="text-base-content text-md leading-snug font-light tracking-wide">
+            <p className="text-base-content text-xs sm:text-base leading-snug font-light tracking-wide">
               <span className="text-primary/80 font-medium">"</span>
               {description}
               <span className="text-primary/80 font-medium">"</span>

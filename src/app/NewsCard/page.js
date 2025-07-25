@@ -22,7 +22,7 @@ export default function NewsCard({ article }) {
         </a>
       </h2>
       <FadeIn>
-        <p className="text-md font-normal text-base-content p-4">
+        <p className="text-xs sm:text-base font-normal text-base-content p-4">
           {description}
         </p>
       </FadeIn>
