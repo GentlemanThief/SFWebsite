@@ -104,9 +104,7 @@ export default function NavbarSwitch() {
               >
                 StrikeFirst
               </span>
-              <span
-                className={`absolute left-1/2 -bottom-1.5 w-3/4 h-0.5 -translate-x-1/2 rounded-full ${scrolled ? "bg-primary" : "bg-white"}`}
-              />
+              <span className="absolute left-1/2 -bottom-1.5 w-3/4 h-0.5 -translate-x-1/2 rounded-full bg-white" />
             </span>
           </span>
         </a>
@@ -283,7 +281,6 @@ export default function NavbarSwitch() {
                 <span>Light Theme</span>
               </button>
             </li>
-
           </ul>
         </div>
 
@@ -310,6 +307,7 @@ export default function NavbarSwitch() {
               >
                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
               </svg>
+
               {/* Notification badge */}
               <div className="absolute -top-2 -right-2 w-5 h-5 bg-secondary rounded-full flex items-center justify-center">
                 <span className="text-xs text-secondary-content font-bold">
