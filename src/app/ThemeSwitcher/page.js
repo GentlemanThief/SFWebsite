@@ -40,9 +40,6 @@ export default function ThemeSwitcher() {
         <li>
           <button onClick={() => changeTheme("StrikeFirstLight")}>Light Theme</button>
         </li>
-        <li>
-          <button onClick={() => changeTheme("Splatoon")}>🦑 Splatoon</button>
-        </li>
       </ul>
     </div>
   );

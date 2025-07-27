@@ -51,30 +51,6 @@ module.exports = {
           "base-content": "#0f0f0f",
         },
       },
-      {
-        Splatoon: {
-          primary: "#fe447d",        // Hot pink ink
-          "primary-focus": "#e63366", // Darker pink
-          'primary-content': '#ffffff',
-          secondary: "#5cd05b",      // Green ink
-          "secondary-focus": "#4ba84a", // Darker green
-          'secondary-content': '#ffffff',
-          accent: "#fedc0c",         // Yellow ink
-          "accent-focus": "#d1b60a",  // Darker yellow
-          'accent-content': '#000000',
-          neutral: "#f78f2e",        // Orange ink
-          "neutral-focus": "#d4761f", // Darker orange
-          'neutral-content': '#000000',
-          "base-100": "#ffffff",     // Clean white background
-          "base-200": "#f8f9fa",     // Very light gray for cards
-          "base-300": "#e9ecef",     // Light gray for borders
-          "base-content": "#212529",  // Dark text for contrast
-          info: "#d1f20a",           // Lime ink for info
-          success: "#5cd05b",        // Green ink for success
-          warning: "#fedc0c",        // Yellow ink for warnings
-          error: "#fe447d",          // Pink ink for errors
-        },
-      },
     ],
   },
 };

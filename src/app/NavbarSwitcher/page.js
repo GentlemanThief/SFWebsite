@@ -283,23 +283,7 @@ export default function NavbarSwitch() {
                 <span>Light Theme</span>
               </button>
             </li>
-            <li>
-              <button
-                onClick={() => changeTheme("Splatoon")}
-                className={`flex items-center space-x-3 p-3 rounded-lg transition-all duration-300 ${
-                  currentTheme === "Splatoon"
-                    ? scrolled
-                      ? "bg-base-300/20 text-base-content"
-                      : "bg-white/5 !text-white"
-                    : scrolled
-                      ? "hover:bg-base-300/10 hover:text-base-content"
-                      : "hover:bg-white/5 hover:!text-white !text-white"
-                }`}
-              >
-                <span>🦑</span>
-                <span>Splatoon</span>
-              </button>
-            </li>
+
           </ul>
         </div>
 
