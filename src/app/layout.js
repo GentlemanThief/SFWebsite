@@ -16,6 +16,7 @@ const siteUrl =
 
 export async function generateMetadata({ params, searchParams }, parent) {
   return {
+    metadataBase: new URL(siteUrl),
     title: siteTitle,
     description: siteDescription,
     keywords: [
@@ -64,8 +65,15 @@ export async function generateMetadata({ params, searchParams }, parent) {
       canonical: siteUrl,
     },
     manifest: "site.webmanifest",
-    viewport: "width=device-width, initial-scale=1, user-scalable=no",
     robots: "index, follow",
+  };
+}
+
+export function generateViewport() {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+    userScalable: false,
   };
 }
 
