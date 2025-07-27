@@ -3,7 +3,6 @@ import AngledSpacer from "../../components/AngledSpacer";
 import MemberCard from "../../components/MemberCard";
 import { membersData } from "./membersData";
 import dynamic from "next/dynamic";
-const FadeIn = dynamic(() => import("../../components/FadeIn"), { ssr: false });
 
 export default function Members() {
   return (

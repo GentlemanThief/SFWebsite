@@ -1,5 +1,4 @@
 import Image from "next/image";
-import FadeIn from "../../components/FadeIn";
 
 export default function NewsCard({ article }) {
   const { title, href, image, alt, description, className } = article;
@@ -21,11 +20,9 @@ export default function NewsCard({ article }) {
           {title}
         </a>
       </h2>
-      <FadeIn>
         <p className="text-xs sm:text-base font-normal text-base-content p-4">
           {description}
         </p>
-      </FadeIn>
     </div>
   );
 }

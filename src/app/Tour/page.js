@@ -1,6 +1,4 @@
 "use client";
-
-import FadeIn from "../../components/FadeIn";
 import tourData from "./tourData";
 import TourCard from "../../components/TourCard";
 import TitleWithDescription from "../../components/TitleWithDescription";

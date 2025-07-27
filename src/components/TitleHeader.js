@@ -1,5 +1,4 @@
 import dynamic from "next/dynamic";
-const FadeIn = dynamic(() => import("./FadeIn"), { ssr: false });
 
 export default function TitleHeader({ title }) {
   return (
@@ -15,11 +14,9 @@ export default function TitleHeader({ title }) {
           
           {/* Main title */}
           <h1 className="text-4xl md:text-5xl font-black uppercase tracking-wider relative">
-            <FadeIn>
               <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent drop-shadow-2xl">
                 {title}
               </span>
-            </FadeIn>
             
             {/* Glow effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent blur-sm opacity-50 -z-10">

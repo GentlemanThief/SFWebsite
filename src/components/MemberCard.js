@@ -1,5 +1,4 @@
 import Image from "next/image";
-import FadeIn from "./FadeIn";
 
 export default function MemberCard({ member }) {
   const { name, realName, image, description, gradient } = member;
@@ -33,11 +32,9 @@ export default function MemberCard({ member }) {
             </a>
           </h3>
         )}
-        <FadeIn>
           <p className="text-xs sm:text-base text-left font-normal text-base-content py-2">
             {description}
           </p>
-        </FadeIn>
       </div>
     </div>
   );

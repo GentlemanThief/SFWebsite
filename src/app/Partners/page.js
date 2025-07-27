@@ -1,6 +1,4 @@
 "use client";
-
-import FadeIn from "../../components/FadeIn";
 import { partnersData } from "./partnersData";
 import PartnerCard from "../PartnerCard/page";
 import TitleWithDescription from "../../components/TitleWithDescription";

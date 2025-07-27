@@ -1,5 +1,4 @@
 import Image from "next/image";
-import FadeIn from "../../components/FadeIn";
 
 export default function PartnerCard({ partner }) {
   const {
@@ -20,11 +19,9 @@ export default function PartnerCard({ partner }) {
         className={`${order === 2 ? "md:order-2" : ""} px-4 md:p-10 flex flex-col justify-center h-full`}
       >
         <h2 className={titleClass}>{name}</h2>
-        <FadeIn>
           <p className="mb-6 text-xs sm:text-base text-center text-base-content sm:text-left">
             {description}
           </p>
-        </FadeIn>
         <a href={href} className={buttonClass}>
           {buttonText}
         </a>

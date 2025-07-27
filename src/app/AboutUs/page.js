@@ -2,7 +2,6 @@
 
 import TitleHeader from "../../components/TitleHeader";
 import AboutUsCarousel from "../AboutUsCarousel/page";
-import FadeIn from "../../components/FadeIn";
 import SectionDescription from "../../components/SectionDescription";
 import AngledSpacer from "../../components/AngledSpacer";
 import SocialIcon from "../../components/SocialIcon";
@@ -61,7 +60,6 @@ export default function AboutUs() {
               <AboutUsCarousel className="order-1" />
             </div>
             <div className="order-1 w-full mx-auto md:w-3/4 md:px-0 p-3 order-2">
-              <FadeIn>
                 <SectionDescription>
                   Cultivating champions and fostering camaraderie, Team
                   StrikeFirst is a dedicated esports squad specializing in
@@ -93,7 +91,6 @@ export default function AboutUs() {
                     />
                   ))}
                 </div>
-              </FadeIn>
             </div>
           </div>
         </article>

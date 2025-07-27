@@ -1,6 +1,4 @@
 "use client";
-
-import FadeIn from "../../components/FadeIn";
 import { newsData } from "./newsData";
 import NewsCard from "../NewsCard/page";
 import TitleWithDescription from "../../components/TitleWithDescription";
