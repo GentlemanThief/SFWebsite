@@ -16,15 +16,17 @@ export default function PartnerCard({ partner }) {
   return (
     <div className="flex flex-col-reverse md:grid md:items-center md:grid-cols-2 gap-y-1 gap-x-8 md:gap-x-16 bg-base-100">
       <div
-        className={`${order === 2 ? "md:order-2" : ""} px-4 md:p-10 flex flex-col justify-center h-full`}
+        className={`${order === 2 ? "md:order-2" : ""} px-6 py-8 md:p-10 flex flex-col justify-center h-full`}
       >
         <h2 className={titleClass}>{name}</h2>
-          <p className="mb-6 text-xs sm:text-base text-center text-base-content sm:text-left">
+          <p className="mb-6 text-xs sm:text-base text-center text-base-content sm:text-left px-2 sm:px-0">
             {description}
           </p>
-        <a href={href} className={buttonClass}>
-          {buttonText}
-        </a>
+        <div className="flex justify-center sm:justify-start">
+          <a href={href} className={buttonClass}>
+            {buttonText}
+          </a>
+        </div>
       </div>
       <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center">
         <a

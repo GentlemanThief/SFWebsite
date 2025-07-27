@@ -45,10 +45,16 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
+    overflow-x: hidden;
+    overscroll-behavior: none;
 }
 
 body {
     overflow-x: hidden;
+    min-height: 100%;
+    position: relative;
+    overscroll-behavior: none;
 }
 
 /* Member card hover effects */
