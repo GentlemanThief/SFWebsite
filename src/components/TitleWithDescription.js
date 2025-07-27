@@ -44,9 +44,9 @@ export default function TitleWithDescription({ title, description }) {
 
             {/* Description text */}
             <p className="text-base-content text-xs sm:text-base leading-snug font-light tracking-wide">
-              <span className="text-primary/80 font-medium">"</span>
+              <span className="text-primary/80 font-medium">&ldquo;</span>
               {description}
-              <span className="text-primary/80 font-medium">"</span>
+              <span className="text-primary/80 font-medium">&rdquo;</span>
             </p>
 
             {/* Subtle bottom accent line */}

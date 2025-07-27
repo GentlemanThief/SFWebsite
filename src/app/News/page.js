@@ -1,6 +1,6 @@
 "use client";
 import { newsData } from "./newsData";
-import NewsCard from "../NewsCard/page";
+import NewsCard from "../../components/NewsCard";
 import TitleWithDescription from "../../components/TitleWithDescription";
 import AngledSpacer from "../../components/AngledSpacer";
 

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import IconEmoji from "./IconEmoji";
 
 export default function NavbarSwitch() {
@@ -8,14 +8,17 @@ export default function NavbarSwitch() {
   const [currentTheme, setCurrentTheme] = useState("StrikeFirstDark");
   const [activeSection, setActiveSection] = useState("home");
 
-  const navItems = [
-    { name: "Home", href: "#hero", icon: "🏡" },
-    { name: "About Us", href: "#about-us", icon: "🧑‍🤝‍🧑" },
-    { name: "News", href: "#news", icon: "📅" },
-    { name: "Partners", href: "#partners", icon: "🤝🏻" },
-    { name: "Tour", href: "#tour", icon: "✈️" },
-    { name: "Members", href: "#members", icon: "⭐" },
-  ];
+  const navItems = useMemo(
+    () => [
+      { name: "Home", href: "#hero", icon: "🏡" },
+      { name: "About Us", href: "#about-us", icon: "🧑‍🤝‍🧑" },
+      { name: "News", href: "#news", icon: "📅" },
+      { name: "Partners", href: "#partners", icon: "🤝🏻" },
+      { name: "Tour", href: "#tour", icon: "✈️" },
+      { name: "Members", href: "#members", icon: "⭐" },
+    ],
+    []
+  );
 
   useEffect(() => {
     const handleScroll = () => {
@@ -112,9 +115,8 @@ export default function NavbarSwitch() {
 
       <div className="navbar-center hidden lg:flex justify-center relative z-10">
         <ul className="menu menu-horizontal font-bold space-x-2">
-          {navItems.map((item, idx) => {
+          {navItems.map((item) => {
             const isActive = activeSection === item.href.substring(1);
-            const hoverColor = "base-300";
             return (
               <li key={item.name} className="relative">
                 <button

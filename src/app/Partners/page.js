@@ -1,6 +1,6 @@
 "use client";
 import { partnersData } from "./partnersData";
-import PartnerCard from "../PartnerCard/page";
+import PartnerCard from "../../components/PartnerCard";
 import TitleWithDescription from "../../components/TitleWithDescription";
 import AngledSpacer from "../../components/AngledSpacer";
 
