@@ -15,9 +15,9 @@ export default function TitleWithDescription({ title, description }) {
 
           {/* Main title */}
           <h1 className="text-4xl md:text-5xl xl:text-4xl 2xl:text-5xl font-black uppercase tracking-wider relative">
-              <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent drop-shadow-2xl">
-                {title}
-              </span>
+            <span className="bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent drop-shadow-2xl">
+              {title}
+            </span>
 
             {/* Glow effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent blur-sm opacity-50 -z-10">
