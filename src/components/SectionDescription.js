@@ -8,7 +8,7 @@ export default function SectionDescription({ children }) {
           
           {/* Enhanced text styling */}
           <p className="text-base-content/90 text-xs sm:text-base leading-snug text-center font-light tracking-wide">
-            <span className="text-primary/80 font-medium">&ldquo;</span>
+            <span className="text-secondary/80 font-medium">&ldquo;</span>
             {children}
             <span className="text-primary/80 font-medium">&rdquo;</span>
           </p>

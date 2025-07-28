@@ -60,37 +60,39 @@ export default function AboutUs() {
               <AboutUsCarousel className="order-1" />
             </div>
             <div className="order-1 w-full mx-auto md:w-3/4 md:px-0 p-3 order-2">
-                <SectionDescription>
-                  Cultivating champions and fostering camaraderie, Team
-                  StrikeFirst is a dedicated esports squad specializing in
-                  competitive fighting games. We are a global family of gamers
-                  who live, breathe, and thrive in the world of virtual combat.
-                  Join us as we continue to challenge the boundaries of esports
-                  and the fighting game community.
-                </SectionDescription>
-                <div className="text-center">
-                  <h3
-                    className="text-4xl sm:text-6xl md:text-2xl lg:text-4xl xl:text-5xl 
-                 font-black inline-block text-transparent bg-clip-text 
-                 bg-gradient-to-r from-primary via-accent to-secondary p-1"
-                  >
-                    #StrikeFirstGaming
-                  </h3>
-                </div>
-                <p className="text-xs sm:text-base text-center text-base-content flex justify-center pb-2">
-                  Follow Us On Social Media:
-                </p>
-                <div className="flex justify-center gap-2">
-                  {socialLinks.map((social, index) => (
-                    <SocialIcon
-                      key={index}
-                      href={social.href}
-                      icon={social.icon}
-                      color={social.color}
-                      ariaLabel={social.ariaLabel}
-                    />
-                  ))}
-                </div>
+              <SectionDescription>
+                Cultivating champions and fostering camaraderie, Team
+                StrikeFirst is a dedicated esports squad specializing in
+                competitive fighting games. We are a global family of gamers who
+                live, breathe, and thrive in the world of virtual combat. Join
+                us as we continue to challenge the boundaries of esports and the
+                fighting game community.
+              </SectionDescription>
+              <div className="text-center">
+                <h3
+                  className="text-4xl sm:text-6xl md:text-2xl lg:text-4xl xl:text-5xl 
+                 font-black inline-block p-1"
+                >
+                  <span className="text-base-300">#</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-secondary">
+                    StrikeFirstGaming
+                  </span>
+                </h3>
+              </div>
+              <p className="text-xs sm:text-base text-center text-base-content flex justify-center pb-2">
+                Follow Us On Social Media:
+              </p>
+              <div className="flex justify-center gap-2">
+                {socialLinks.map((social, index) => (
+                  <SocialIcon
+                    key={index}
+                    href={social.href}
+                    icon={social.icon}
+                    color={social.color}
+                    ariaLabel={social.ariaLabel}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </article>
