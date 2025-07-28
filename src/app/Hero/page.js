@@ -14,12 +14,12 @@ export default function Hero() {
   }, []);
 
   return (
-    <div id="hero" className="hero min-h-screen">
-      <div className="hero-overlay">
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden brightness-75">
+    <div id="hero" className="hero min-h-screen relative">
+      <div className="hero-overlay absolute inset-0">
+        <div className="absolute inset-0 overflow-hidden brightness-75">
           <video
             key={videoName}
-            className="min-w-full min-h-full absolute object-cover"
+            className="w-full h-full object-cover"
             autoPlay
             muted
             loop

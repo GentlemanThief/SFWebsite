@@ -20,10 +20,11 @@ const TourCard = ({ tour }) => {
       }`}
     >
       <div className="absolute top-0 bottom-0 left-0 right-0 bg-base-100 overflow-hidden">
-        <a href={videoUrl} target="_blank" rel="noopener noreferrer">
+        <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="relative block w-full h-full">
           <Image
             src={imageUrl}
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
             alt={eventName}
             loading="lazy"

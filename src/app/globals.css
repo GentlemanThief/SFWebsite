@@ -54,6 +54,18 @@ body {
     overscroll-behavior-y: none;
 }
 
+/* Fix mobile viewport height issues */
+.hero {
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for modern browsers */
+}
+
+@supports not (height: 100dvh) {
+    .hero {
+        min-height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    }
+}
+
 /* Member card hover effects */
 .member-card {
   position: relative;
