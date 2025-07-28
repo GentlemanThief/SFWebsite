@@ -44,7 +44,7 @@ export default function TitleWithDescription({ title, description }) {
 
             {/* Description text */}
             <p className="text-base-content text-xs md:text-base xl:text-sm 2xl:text-base leading-relaxed md:leading-snug font-light tracking-wide text-center xl:text-left">
-              <span className="text-primary/80 font-medium">&ldquo;</span>
+              <span className="text-secondary/80 font-medium">&ldquo;</span>
               {description}
               <span className="text-primary/80 font-medium">&rdquo;</span>
             </p>
