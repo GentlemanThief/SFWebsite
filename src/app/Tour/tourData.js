@@ -5,8 +5,6 @@ const tourData = [
     location: "Las Vegas, Nevada",
     imageUrl: "/TourImages/Tour1.png",
     videoUrl: "https://www.youtube.com/watch?v=EK7ObS6yxQc",
-    layout: "large",
-    buttonColor: "bg-primary",
   },
   {
     id: 2,
@@ -14,8 +12,6 @@ const tourData = [
     location: "Daytona Beach, Florida",
     imageUrl: "/TourImages/Tour2.png",
     videoUrl: "https://www.youtube.com/watch?v=g8xG9ZQJbEY",
-    layout: "small",
-    buttonColor: "bg-secondary",
   },
   {
     id: 3,
@@ -23,8 +19,6 @@ const tourData = [
     location: "Schaumburg, Illinois",
     imageUrl: "/TourImages/Tour3.png",
     videoUrl: "https://www.youtube.com/watch?v=KvPqSTNXvHc",
-    layout: "small",
-    buttonColor: "bg-accent",
   },
   {
     id: 4,
@@ -32,8 +26,6 @@ const tourData = [
     location: "Brooklyn, New York",
     imageUrl: "/TourImages/Tour4.png",
     videoUrl: "https://www.youtube.com/watch?v=On3fawmAHEc",
-    layout: "small",
-    buttonColor: "bg-accent",
   },
   {
     id: 5,
@@ -41,9 +33,43 @@ const tourData = [
     location: "Tokyo, Japan",
     imageUrl: "/TourImages/Tour5.png",
     videoUrl: "https://www.youtube.com/watch?v=Qw2F8GroJlA",
-    layout: "small",
-    buttonColor: "bg-secondary",
+  },
+  {
+    id: 6,
+    eventName: "Frosty Faustings 2024",
+    location: "Lombard, Illinois",
+    imageUrl: "/TourImages/Tour6.png",
+    videoUrl: "https://www.youtube.com/watch?v=WzobDWcBAvk",
+  },
+  {
+    id: 7,
+    eventName: "Texas Showdown 2024",
+    location: "Houston, Texas",
+    imageUrl: "/TourImages/Tour7.png",
+    videoUrl: "https://www.youtube.com/watch?v=HcQsxC_3DHc",
+  },
+  {
+    id: 8,
+    eventName: "DreamHack Dallas 2024",
+    location: "Dallas, Texas",
+    imageUrl: "/TourImages/Tour8.png",
+    videoUrl: "https://www.youtube.com/watch?v=Qw2F8GroJlA",
+  },
+  {
+    id: 9,
+    eventName: "Combo Breaker 2024",
+    location: "Chicago, Illinois",
+    imageUrl: "/TourImages/Tour9.png",
+    videoUrl: "https://www.youtube.com/watch?v=E1CpwtzENKI",
+  },
+  {
+    id: 10,
+    eventName: "CEO 2024",
+    location: "Daytona, Florida",
+    imageUrl: "/TourImages/Tour10.png",
+    videoUrl: "https://www.youtube.com/watch?v=Em5rEdYrZpE",
   },
 ];
 
-export default tourData;
+// Export only the newest 5 tour locations (last 5 entries)
+export default tourData.slice(-5);
