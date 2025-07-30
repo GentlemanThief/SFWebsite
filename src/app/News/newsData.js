@@ -23,4 +23,28 @@ export const newsData = [
     description: `Our very own Cookye Fu Sung has been featured on button check. Delve into the narrative of Cookye's passion and prowess on display at this prestigious event – press play now for an exclusive peek into her adventure!`,
     className: "text-secondary underline",
   },
+  {
+    title: "Hollywood Rob TV interview by DR.B",
+    href: "https://www.youtube.com/watch?v=xX7qFzNflmI",
+    image: "/NewsImages/News4.png",
+    alt: "News4",
+    description: `Get the inside scoop as Hollywood Rob TV goes one-on-one with DR.B aka GALAXY B at the world's biggest fighting game tournament.`,
+    className: "text-primary underline",
+  },
+  {
+    title: "Okplayer interview with DR.B aka GALAXY B at Defend The North X",
+    href: "https://www.youtube.com/watch?v=OJ0WxjF4mCU",
+    image: "/NewsImages/News5.png",
+    alt: "News5",
+    description: `Hip-hop meets the FGC as Okplayer catches up with DR.B aka GALAXY B at 2024's most electrifying tournament. From the culture to the competition, discover what drives one of the scene's most dynamic voices.`,
+    className: "text-accent underline",
+  },
+  {
+    title: "Okplayer interview with DR.B aka GALAXY B at Defend The North X",
+    href: "https://www.youtube.com/watch?v=eIhkPEgZpI4",
+    image: "/NewsImages/News6.png",
+    alt: "News6",
+    description: `Witness legendary moments that never made it to the main stream. Uncover explosive bracket matches, clutch comebacks, and jaw-dropping tech from CvS2's greatest EVO showdowns.`,
+    className: "text-secondary underline",
+  },
 ];

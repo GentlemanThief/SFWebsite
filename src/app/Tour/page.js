@@ -14,8 +14,8 @@ export default function Tour() {
       />
       <div className="max-w-screen-7xl p-4 mx-auto bg-base-200 text-base-content">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 md:gap-0 lg:grid-rows-2">
-          {tourData.map((tour) => (
-            <TourCard key={tour.id} tour={tour} />
+          {tourData.map((tour, index) => (
+            <TourCard key={tour.id} tour={tour} index={index} />
           ))}
         </div>
       </div>

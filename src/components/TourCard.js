@@ -1,9 +1,20 @@
 import Image from "next/image";
 
-const TourCard = ({ tour }) => {
-  const { eventName, location, imageUrl, videoUrl, layout, buttonColor } = tour;
+const TourCard = ({ tour, index }) => {
+  const { eventName, location, imageUrl, videoUrl } = tour;
 
-  const isLarge = layout === "large";
+  // Make the first card large
+  const isLarge = index === 0;
+
+  // Button colors in specific order: Primary, Secondary, Accent, Accent, Secondary
+  const buttonColors = [
+    "bg-primary",
+    "bg-secondary",
+    "bg-accent",
+    "bg-accent",
+    "bg-secondary",
+  ];
+  const buttonColor = buttonColors[index % buttonColors.length];
 
   // Define hover classes based on button color
   const getHoverClass = () => {
@@ -20,7 +31,12 @@ const TourCard = ({ tour }) => {
       }`}
     >
       <div className="absolute top-0 bottom-0 left-0 right-0 bg-base-100 overflow-hidden">
-        <a href={videoUrl} target="_blank" rel="noopener noreferrer" className="relative block w-full h-full">
+        <a
+          href={videoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="relative block w-full h-full"
+        >
           <Image
             src={imageUrl}
             fill
@@ -54,7 +70,7 @@ const TourCard = ({ tour }) => {
           rel="noopener noreferrer"
           href={videoUrl}
           target="_blank"
-          className={`btn font-medium text-md group-hover:underline ${buttonColor || "bg-primary"} text-white transition-colors ${getHoverClass()}`}
+          className={`btn font-medium text-md group-hover:underline ${buttonColor} text-white transition-colors ${getHoverClass()}`}
         >
           Watch Now
         </a>
