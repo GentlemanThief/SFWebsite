@@ -71,5 +71,4 @@ const tourData = [
   },
 ];
 
-// Export only the newest 5 tour locations (last 5 entries)
 export default tourData.slice(-5);
