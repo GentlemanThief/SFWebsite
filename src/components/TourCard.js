@@ -27,7 +27,7 @@ const TourCard = ({ tour, index }) => {
   return (
     <div
       className={`relative flex items-end justify-start w-full text-left bg-center bg-cover cursor-pointer h-96 group border border-2 border-base-100 dark:bg-gray-500 ${
-        isLarge ? "md:col-span-2 lg:row-span-2 lg:h-full" : ""
+        isLarge ? "md:col-span-2 md:h-full lg:row-span-2 lg:h-full" : ""
       }`}
     >
       <div className="absolute top-0 bottom-0 left-0 right-0 bg-base-100 overflow-hidden">
@@ -52,15 +52,15 @@ const TourCard = ({ tour, index }) => {
           rel="noopener noreferrer"
           href={videoUrl}
           target="_blank"
-          className={`py-2 font-black text-white group-hover:underline ${isLarge ? "text-5xl" : "text-md"}`}
+          className={`py-2 font-black text-white group-hover:underline ${isLarge ? "text-lg md:text-3xl lg:text-5xl" : "text-md"}`}
         >
           {eventName}
         </a>
         <div className="flex flex-col justify-start text-center text-white group-hover:underline">
-          <span className={`font-black ${isLarge ? "text-4xl" : "text-md"}`}>
+          <span className={`font-black ${isLarge ? "text-base md:text-2xl lg:text-4xl" : "text-md"}`}>
             {location.split(",")[0]},
           </span>
-          <span className={`text-white ${isLarge ? "text-xl" : "text-md"}`}>
+          <span className={`text-white ${isLarge ? "text-sm md:text-lg lg:text-xl" : "text-md"}`}>
             {location.split(",")[1]}
           </span>
         </div>
