@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 
 import "./globals.css";
 
-const NavbarSwitch = dynamic(() => import("./NavbarSwitcher/page"), { ssr: false });
+const NavbarSwitch = dynamic(() => import("./Navbar/page"), { ssr: false });
 const Hero = dynamic(() => import("./Hero/page"));
 const AboutUs = dynamic(() => import("./AboutUs/page"));
 const News = dynamic(() => import("./News/page"));

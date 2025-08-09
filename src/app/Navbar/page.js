@@ -147,10 +147,10 @@ export default function NavbarSwitch() {
                     className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 h-0.5 transition-all duration-300 ${
                       isActive
                         ? scrolled
-                          ? "w-full bg-base-300"
+                          ? "w-full bg-gradient-to-r from-primary via-accent to-secondary"
                           : "w-full bg-white"
                         : scrolled
-                          ? "w-0 group-hover:w-full bg-base-300"
+                          ? "w-0 group-hover:w-full bg-gradient-to-r from-primary via-accent to-secondary"
                           : "w-0 group-hover:w-full bg-white"
                     }`}
                   ></div>
