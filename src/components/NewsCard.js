@@ -11,8 +11,8 @@ export default function NewsCard({ article }) {
           className="object-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-105"
           alt={alt}
           fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          loading="lazy"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          quality={85}
         />
       </a>
       <h2 className="text-base sm:text-lg font-black text-center">
