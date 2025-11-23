@@ -24,6 +24,7 @@ export default function Hero() {
             muted
             loop
             playsInline
+            preload="auto"
             aria-label="Background video"
             poster="/Strikefirsthero-poster.png"
           >

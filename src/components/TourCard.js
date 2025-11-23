@@ -40,10 +40,10 @@ const TourCard = ({ tour, index }) => {
           <Image
             src={imageUrl}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            quality={85}
             className="object-cover w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105"
             alt={eventName}
-            loading="lazy"
           />
         </a>
       </div>

@@ -59,7 +59,9 @@ export default function AboutUsCarousel() {
               <Image
                 src={slide.src}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                quality={85}
+                priority={index === 0}
                 className="object-cover block align-bottom"
                 alt={slide.alt}
               />
